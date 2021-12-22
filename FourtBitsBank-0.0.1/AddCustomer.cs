@@ -48,10 +48,9 @@ namespace FourtBitsBank_0
              * customerId.Text
              * accountNumbeer.Text
              */
-            if (isAdd && isValid())
+            if (isValid())
             {
-                Customer customer = new Customer(
-                    customerId.Text,
+                Customer customer = new Customer(customerId.Text,
                     name.Text,
                     lastName.Text,
                     contact.Text,
@@ -63,18 +62,13 @@ namespace FourtBitsBank_0
                     (Plan)plan.SelectedIndex,
                     0
                     );
-                Database.saveCustomer(customer);
-            }
-            else if (isValid())
-            {
-                //put the save code here
-            }
-            if (!isValid()) MessageBox.Show("Wrong Input Data");
-            else
-            {
+                if (isAdd) Database.saveCustomer(customer);
+                else Database.updateCustomer(customer);
+
                 clearInputs();
                 Utils.displayMenu();
             }
+            else MessageBox.Show("Wrong Input Data");
         }
         private void clearInputs()
         {

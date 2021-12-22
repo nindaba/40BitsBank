@@ -65,12 +65,35 @@ namespace FourtBitsBank_0
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public static void updateCustomer(Customer customer)
+        {
+            customers[ customerIndex] = customer;
+            string custms = "";
+            foreach(var cust in customers)
+            {
+                custms += cust.ToString()+"\n";
+            }
+            try
+            {
+                FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Write);
+                StreamWriter streamWriter = new StreamWriter(fileStream);
+                streamWriter.Write(custms);
+                streamWriter.Close();
+                fileStream.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public static List<Staff> getSaff()
         {
             List<Staff> staffs = new List<Staff>();
             try
             {
-                FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Read);
+                FileStream fileStream = new FileStream("data/staff.txt", FileMode.Open, FileAccess.Read);
                 StreamReader streamReader = new StreamReader(fileStream);
                 while (!streamReader.EndOfStream) Database.staffs.Add(Staff.Parse(streamReader.ReadLine()));
                 streamReader.Close();
