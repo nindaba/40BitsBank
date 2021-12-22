@@ -51,6 +51,7 @@ namespace FourtBitsBank_0
             if (isAdd && isValid())
             {
                 Customer customer = new Customer(
+                    customerId.Text,
                     name.Text,
                     lastName.Text,
                     contact.Text,
@@ -59,7 +60,6 @@ namespace FourtBitsBank_0
                     profilePicture.ImageLocation.ToString(),
                     balance.Value,
                     accountNumber.Text,
-                    customerId.Text,
                     (Plan)plan.SelectedIndex
                     );
                 Database.saveCustomer(customer);

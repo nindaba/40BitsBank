@@ -15,6 +15,7 @@ namespace FourtBitsBank_0
         public ShowCustomer()
         {
             InitializeComponent();
+            
         }
 
         private void controlBalance_Click(object sender, EventArgs e)
@@ -70,6 +71,39 @@ namespace FourtBitsBank_0
 
             AddCustomer editCustomer = new AddCustomer(false);
             Utils.display(editCustomer);
+        }
+
+        void initCustomer()
+        {
+            /*
+            * lastName.Text
+            * contact.Text
+            * email.Text
+            * address.Text
+            * balance.Text 
+            * profilePicture.ImageLocation.ToString();
+            * plan.SelectedIndex
+            * customerId.Text
+            * accountNumbeer.Text
+            * balance.TexT
+            * savings.Text
+            * plan.Text
+            * current.Text  //this is for the pagination;showing the current page << 1/10 >>
+            * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
+            */
+            Customer customer;
+
+            name.Text = customer.name;
+            lastName.Text = customer.lastname;
+            contact.Text = customer.contact;
+            email.Text = customer.email;
+            address.Text = customer.adress;
+            balance.Text = customer.balance;
+            profilePicture.ImageLocation.ToString() = customer.profilePic;
+
+
+
+
         }
     }
 }

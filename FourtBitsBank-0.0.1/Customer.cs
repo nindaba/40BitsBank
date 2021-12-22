@@ -8,10 +8,10 @@ namespace FourtBitsBank_0
 {
     public class Customer : Person 
     {
-        decimal balance;
-        Plan plan;
-        string accountNumber;
-        string customerId;
+        public decimal balance;
+        public Plan plan;
+        public string accountNumber;
+        public string customerId;
         public Customer(string customerId,string name,string lastname,string contact,string email,string adress,string profilePic,
             decimal balance,string accountNumber,Plan plan)
 

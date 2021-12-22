@@ -63,6 +63,8 @@ namespace FourtBitsBank_0
              * extraHours.Text
              * salary.Text
              */
+            new StaffControl();
+
 
         }
     }
