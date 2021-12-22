@@ -33,9 +33,11 @@ namespace FourtBitsBank_0
         public static Staff Parse(string staff)
         {
 
-            string[] details = staff.Split('_');
-            Role r = (Role)Enum.Parse(typeof(Role), details[7]);
+            string[] details = staff
+                //.Trim('\n')
+                .Split('_');
             return new Staff(details[0], details[1], details[2], details[3], details[4], details[5], details[6],
-                r, int.Parse(details[8]),int.Parse(details[9]), decimal.Parse(details[10]), decimal.Parse(details[11]));
+                (Role)Enum.Parse(typeof(Role), details[7]), int.Parse(details[8]), int.Parse(details[9]), decimal.Parse(details[10]), decimal.Parse(details[11]));
         }
     }
+}
