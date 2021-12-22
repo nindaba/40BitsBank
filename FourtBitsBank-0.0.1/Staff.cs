@@ -22,8 +22,8 @@ namespace FourtBitsBank_0
             this.salary = salary;
             this.balance = balance;
         }
-
-        public string printData()
+        override
+        public string ToString()
         {
             return $"{this.staff_id}_{this.role}_{this.hours}_{this.extra_hours}_{this.extra_hours}_{this.salary}_{this.balance}";
         }
