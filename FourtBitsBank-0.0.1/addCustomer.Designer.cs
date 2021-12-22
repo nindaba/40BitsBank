@@ -57,9 +57,6 @@
             this.balance = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.balance)).BeginInit();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -311,12 +308,6 @@
             this.balance.Name = "balance";
             this.balance.Size = new System.Drawing.Size(240, 23);
             this.balance.TabIndex = 46;
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(527, 277);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown1.TabIndex = 46;
             // 
             // AddCustomer
             // 
@@ -325,7 +316,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.balance);
-            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.modifySavings);
             this.Controls.Add(this.modifyBalance);
             this.Controls.Add(this.modifySavingLabel);
@@ -357,7 +347,6 @@
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.balance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,6 +381,5 @@
         private Label modifySavings;
         private Label modifyBalance;
         private NumericUpDown balance;
-        private NumericUpDown numericUpDown1;
     }
 }
