@@ -141,7 +141,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 15);
             this.label8.TabIndex = 34;
-            this.label8.Text = "Plan";
+            this.label8.Text = "Role";
             // 
             // label7
             // 
