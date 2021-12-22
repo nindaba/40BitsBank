@@ -122,6 +122,7 @@ namespace FourtBitsBank_0
             current.Text = "" + (Database.customerIndex + 1);
             customerId.Text = customer.customerId;
             accountNumbeer.Text = customer.accountNumber;
+            savings.Text = customer.savings.ToString();
         }
     }
 }

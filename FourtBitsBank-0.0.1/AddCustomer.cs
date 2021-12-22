@@ -60,7 +60,8 @@ namespace FourtBitsBank_0
                     profilePicture.ImageLocation.ToString(),
                     balance.Value,
                     accountNumber.Text,
-                    (Plan)plan.SelectedIndex
+                    (Plan)plan.SelectedIndex,
+                    0
                     );
                 Database.saveCustomer(customer);
             }
@@ -113,16 +114,17 @@ namespace FourtBitsBank_0
 
 
                 Customer customer=Database.getCustomer(Database.customerIndex);
+                name.Text = customer.name;
                 lastName.Text = customer.lastname;
-                contact.Text= customer.contact
+                contact.Text = customer.contact;
                 email.Text = customer.email;
                 address.Text = customer.adress;
-                balance.Text= customer
-                profilePicture.ImageLocation.ToString();= customer
-                lan.SelectedIndex= customer
-                customerId.Text= customer
-                accountNumbeer.Text= customer
-                savings= customer
+                balance.Text = customer.balance.ToString();
+                profilePicture.ImageLocation = customer.profilePic;
+                //plan.SelectedIndex = customer.plan;
+                customerId.Text = customer.customerId;
+                accountNumber.Text = customer.accountNumber;
+                modifySavings.Text = customer.savings.ToString();
 
 
 
