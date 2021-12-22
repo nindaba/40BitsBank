@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0
 {
-    internal enum Role
+    public enum Role
     {
         ROLE1,
         ROLE2,

@@ -56,7 +56,7 @@ namespace FourtBitsBank_0
             //int AccountNumberRandom = random.Next(10000, 99999);
             //accountNumbeer.Text += AccountNumberRandom.ToString();
             //MessageBox.Show("Check the IDs");
-            if (isAdd)
+            if (isAdd && isValid())
             {
                 Customer customer = new Customer(
                     name.Text,
@@ -67,16 +67,21 @@ namespace FourtBitsBank_0
                     profilePicture.ImageLocation.ToString(),
                     balance.Value,
                     accountNumber.Text,
-                    customerId.Text
-                    ) ;
+                    customerId.Text,
+                    (Plan) plan.SelectedIndex
+                    ) ;               
                 Database.saveCustomer(customer);    
             }
-            else
+            else if(isValid())
             {
                 //put the save code here
             }
-            clearInputs();
-            Utils.displayMenu();
+            if (!isValid()) MessageBox.Show("Wrong Input Data");
+            else
+            {
+                clearInputs();
+                Utils.displayMenu();
+            }
         }
         private void clearInputs()
         {
@@ -94,7 +99,7 @@ namespace FourtBitsBank_0
         }
         private void initialize()
         {
-            //profilePicture.ImageLocation = "images/default.png";
+            profilePicture.ImageLocation = @"images/default.png";
             if (!isAdd)
             {
                 /*
@@ -134,6 +139,28 @@ namespace FourtBitsBank_0
         private void label9_Click(object sender, EventArgs e)
         {
 
+        }
+        Boolean isValid()
+        {
+            //MessageBox.Show(""+name.Text.Equals(""));
+            return !(
+                name.Text.Equals("") &&
+                lastName.Text.Equals("") &&
+                contact.Text.Equals("") &&
+                email.Text.Equals("") &&
+                address.Text.Equals("") &&
+                balance.Text.Equals("")
+
+                //lastName.Text,
+                //    contact.Text,
+                //    email.Text,
+                //    address.Text,
+                //    profilePicture.ImageLocation.ToString(),
+                //    balance.Value,
+                //    accountNumber.Text,
+                //    customerId.Text
+
+                ) ;
         }
     }
 }

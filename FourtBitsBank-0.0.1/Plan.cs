@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0
 {
-    internal enum Plan
+    public enum Plan
     {
         PLAN1,
         PLAN2,

@@ -13,12 +13,13 @@ namespace FourtBitsBank_0
         string accountNumber;
         string customerId;
         public Customer(string name,string lastname,string contact,string email,string adress,string profilePic,
-            decimal balance,string accountNumber,string customerId)
+            decimal balance,string accountNumber,string customerId,Plan plan)
 
 
 
             :base(name, lastname, contact, email, adress, profilePic)
         {
+            this.plan = plan;
             this.balance = balance;
             this.accountNumber = accountNumber;
             this.customerId = customerId;
