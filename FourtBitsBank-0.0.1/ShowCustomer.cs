@@ -15,7 +15,8 @@ namespace FourtBitsBank_0
         public ShowCustomer()
         {
             InitializeComponent();
-            
+            Database.loadCustomers();
+            showCustomer(Database.customerIndex);
         }
 
         private void controlBalance_Click(object sender, EventArgs e)
@@ -48,22 +49,34 @@ namespace FourtBitsBank_0
         * current.Text  //this is for the pagination;showing the current page << 1/10 >>
         * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
         */
-        private void button2_Click(object sender, EventArgs e)
+        private void prevClick(object sender, EventArgs e)
         {
             //TODO show the prev
             /*
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
+            if (Database.customerIndex > 0)
+            {
+                Database.customerIndex--;
+                showCustomer(Database.customerIndex);
+            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+
             //TODO show the next
             /*
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
+            if (Database.customerIndex < Database.customers.Count()-1)
+            {
+                Database.customerIndex++;
+                showCustomer(Database.customerIndex);
+            }
         }
 
         private void editCustomer(object sender, EventArgs e)
@@ -75,6 +88,8 @@ namespace FourtBitsBank_0
 
         void initCustomer()
         {
+
+
             /*
             * lastName.Text
             * contact.Text
@@ -82,7 +97,7 @@ namespace FourtBitsBank_0
             * address.Text
             * balance.Text 
             * profilePicture.ImageLocation.ToString();
-            * plan.SelectedIndex
+            * plan.SelectedDatabase.customerIndex
             * customerId.Text
             * accountNumbeer.Text
             * balance.TexT
@@ -91,19 +106,22 @@ namespace FourtBitsBank_0
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
-            Customer customer;
+            
+        }
+        void showCustomer(int index)
+        {
+            Customer customer = Database.customers[Database.customerIndex];
 
             name.Text = customer.name;
             lastName.Text = customer.lastname;
             contact.Text = customer.contact;
             email.Text = customer.email;
             address.Text = customer.adress;
-            balance.Text = customer.balance;
-            profilePicture.ImageLocation.ToString() = customer.profilePic;
-
-
-
-
+            balance.Text = customer.balance.ToString();
+            profilePicture.ImageLocation = customer.profilePic;
+            current.Text = "" + (Database.customerIndex + 1);
+            customerId.Text = customer.customerId;
+            accountNumbeer.Text = customer.accountNumber;
         }
     }
 }

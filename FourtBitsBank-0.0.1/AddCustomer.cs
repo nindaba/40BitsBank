@@ -110,8 +110,26 @@ namespace FourtBitsBank_0
                 * savings
                 * 
                 */
-                Customers customers;
-                
+
+
+                Customer customer=Database.getCustomer(Database.customerIndex);
+                lastName.Text = customer.lastname;
+                contact.Text= customer.contact
+                email.Text = customer.email;
+                address.Text = customer.adress;
+                balance.Text= customer
+                profilePicture.ImageLocation.ToString();= customer
+                lan.SelectedIndex= customer
+                customerId.Text= customer
+                accountNumbeer.Text= customer
+                savings= customer
+
+
+
+
+
+
+                title.Text = "Edit Customer";               
                 addOrEditButton.Text = "Modify";
                 balance.Visible = false;
                 balanceLabel.Visible = false;

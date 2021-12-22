@@ -8,12 +8,12 @@ namespace FourtBitsBank_0
 {
     public static class Database
     {
-        
 
-        private static List<Customer> customers = new List<Customer>();
+
+        public static  List<Customer> customers = new List<Customer>();
+        public static  int customerIndex = 0;
         public static void saveCustomer(Customer customer)
         {
-            customers.Add(customer);
             try
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Append,FileAccess.Write);
@@ -27,14 +27,18 @@ namespace FourtBitsBank_0
                 MessageBox.Show(ex.Message);
             }
         }
-        public static List<Customer> getCustomers()
+        public static Customer getCustomer(int index)
+        {
+            return customers[index];
+        }
+        public static void loadCustomers()
         {
             List<Customer> customers = new List<Customer>();
             try
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Read);
                 StreamReader streamReader = new StreamReader(fileStream);
-                while (!streamReader.EndOfStream) customers.Add(Customer.Parse(streamReader.ReadLine()));
+                while (!streamReader.EndOfStream) Database.customers.Add(Customer.Parse(streamReader.ReadLine()));
                 streamReader.Close();
                 fileStream.Close();
             } 
@@ -42,9 +46,9 @@ namespace FourtBitsBank_0
             {
                 MessageBox.Show("Failed to load data from the file");
             }
-            return customers;
         }
         private static List<Staff> staffs = new List<Staff>();
+        private static int staffIndex = 0;
         public static void saveStaff(Staff staff)
         {
             staffs.Add(staff);
@@ -68,7 +72,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Read);
                 StreamReader streamReader = new StreamReader(fileStream);
-                while (!streamReader.EndOfStream) staffs.Add(Staff.Parse(streamReader.ReadLine()));
+                while (!streamReader.EndOfStream) Database.staffs.Add(Staff.Parse(streamReader.ReadLine()));
                 streamReader.Close();
                 fileStream.Close();
             }
