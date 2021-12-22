@@ -47,15 +47,7 @@ namespace FourtBitsBank_0
              * plan.SelectedIndex
              * customerId.Text
              * accountNumbeer.Text
-            // */
-            
-            clearInputs();
-            //Random random = new Random();
-            //int CustomerIdRandom = random.Next(10000, 99999);
-            //customerId.Text += CustomerIdRandom.ToString();
-            //int AccountNumberRandom = random.Next(10000, 99999);
-            //accountNumbeer.Text += AccountNumberRandom.ToString();
-            //MessageBox.Show("Check the IDs");
+             */
             if (isAdd && isValid())
             {
                 Customer customer = new Customer(
@@ -68,11 +60,11 @@ namespace FourtBitsBank_0
                     balance.Value,
                     accountNumber.Text,
                     customerId.Text,
-                    (Plan) plan.SelectedIndex
-                    ) ;               
-                Database.saveCustomer(customer);    
+                    (Plan)plan.SelectedIndex
+                    );
+                Database.saveCustomer(customer);
             }
-            else if(isValid())
+            else if (isValid())
             {
                 //put the save code here
             }
@@ -142,25 +134,13 @@ namespace FourtBitsBank_0
         }
         Boolean isValid()
         {
-            //MessageBox.Show(""+name.Text.Equals(""));
             return !(
                 name.Text.Equals("") &&
                 lastName.Text.Equals("") &&
                 contact.Text.Equals("") &&
                 email.Text.Equals("") &&
-                address.Text.Equals("") &&
-                balance.Text.Equals("")
-
-                //lastName.Text,
-                //    contact.Text,
-                //    email.Text,
-                //    address.Text,
-                //    profilePicture.ImageLocation.ToString(),
-                //    balance.Value,
-                //    accountNumber.Text,
-                //    customerId.Text
-
-                ) ;
+                address.Text.Equals("")
+                );
         }
     }
 }
