@@ -38,7 +38,7 @@ namespace FourtBitsBank_0
              * NOTE DO NOT DELETE THE COMEMENTS WRITE THE CODE BELLOW
              * TODO Write code for saving under the comment Note to create the random Ids
              * 
-             * lastName.Text
+             * 
              * contact.Text
              * email.Text
              * address.Text
@@ -48,6 +48,7 @@ namespace FourtBitsBank_0
              * customerId.Text
              * accountNumbeer.Text
             // */
+            
             clearInputs();
             //Random random = new Random();
             //int CustomerIdRandom = random.Next(10000, 99999);
@@ -57,7 +58,14 @@ namespace FourtBitsBank_0
             //MessageBox.Show("Check the IDs");
             if (isAdd)
             {
-                
+                Customer customer = new Customer(
+                    name.Text,
+                    lastName.Text,
+                    contact.Text,
+                    email.Text,
+                    address.Text,
+                    balance.Text,
+                    ) ;
             }
             else
             {
@@ -101,10 +109,7 @@ namespace FourtBitsBank_0
              * 
              */
 
-
-
-
-
+                
                 addOrEditButton.Text = "Modify";
                 balance.Visible = false;
                 balanceLabel.Visible = false;
@@ -112,6 +117,8 @@ namespace FourtBitsBank_0
             }
             else
             {
+                accountNumber.Text = Utils.generateAccountNumber();
+                customerId.Text = Utils.generateId();
                 modifyBalanceLabel.Visible = false;
                 modifySavingLabel.Visible = false;
                 modifyBalance.Visible = false;
