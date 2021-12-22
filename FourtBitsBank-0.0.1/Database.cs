@@ -13,10 +13,10 @@ namespace FourtBitsBank_0
         {
             customers.Add(customer);
         }
-        //private static List<Staff> staff = new List<Staff>();
-        //public static void saveStaff(Staff staff)
-        //{
-        //    customers.Add(staff);
-        //}
+        private static List<Staff> staffs = new List<Staff>();
+        public static void saveStaff(Staff staff)
+        {
+            staffs.Add(staff);
+        }
     }
 }

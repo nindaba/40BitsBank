@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FourtBitsBank_0._0._1
+namespace FourtBitsBank_0
 {
-    class Staff:Person
+    public class Staff:Person
     {
         //this string below should be encapsulated. We use public because Mahdi does not have time
         public string staff_id, role, hours, extra_hours, salary, balance;
         public Staff(
-            string name, string lastname, string contact, string email, string adress,
+            string name, string lastname, string contact, string email, string adress,string profilePic,
             string staff_id, string role, string hours, string extra_hours, string salary, string balance)
-            :base(name, lastname, contact, email, adress)
+            :base(name, lastname, contact, email, adress,profilePic)
         {
             this.staff_id = staff_id;
             this.role = role;
