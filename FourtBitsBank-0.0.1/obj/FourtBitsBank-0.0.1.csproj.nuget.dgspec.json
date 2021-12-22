@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj": {}
+    "C:\\Users\\User\\Documents\\40TBITS\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj": {}
   },
   "projects": {
-    "D:\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj": {
+    "C:\\Users\\User\\Documents\\40TBITS\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\40TBITS\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
         "projectName": "FourtBitsBank-0.0.1",
-        "projectPath": "D:\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
-        "packagesPath": "C:\\Users\\Jaloliddin\\.nuget\\packages\\",
-        "outputPath": "D:\\40BitsBank\\FourtBitsBank-0.0.1\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\40TBITS\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\40TBITS\\FourtBitsBank-0.0.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jaloliddin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,7 +50,15 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
