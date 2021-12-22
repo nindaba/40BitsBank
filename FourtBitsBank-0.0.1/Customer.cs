@@ -10,9 +10,6 @@ namespace FourtBitsBank_0
     {
         int balance;
         Plan plan;
-<<<<<<< HEAD
-        int accountNumber; //ni
-=======
         int accountNumber;
         int customerId;
         public Customer(string name,string lastname,string contact,string email,string adress,string profilePic,
@@ -28,6 +25,5 @@ namespace FourtBitsBank_0
             //asdasdsad
             
         }
->>>>>>> 302fcc768d02da7576eb7b79abb063d050646993
     }
 }
