@@ -94,6 +94,7 @@ namespace FourtBitsBank_0
         }
         private void initialize()
         {
+            //profilePicture.ImageLocation = "images/default.png";
             if (!isAdd)
             {
                 /*

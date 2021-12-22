@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0
 {
-<<<<<<< HEAD
-    public class Customer : Person //
-=======
-    internal class Customer : Person
->>>>>>> ebd80494c7a9a32667e3c6847d82784e75f1bd10
+    public class Customer : Person 
     {
         decimal balance;
         Plan plan;
