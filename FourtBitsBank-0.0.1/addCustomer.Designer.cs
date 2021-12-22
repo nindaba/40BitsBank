@@ -49,7 +49,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.customerId = new System.Windows.Forms.Label();
-            this.accountNumbeer = new System.Windows.Forms.Label();
+            this.accountNumber = new System.Windows.Forms.Label();
             this.plan = new System.Windows.Forms.ComboBox();
             this.modifyBalanceLabel = new System.Windows.Forms.Label();
             this.modifySavingLabel = new System.Windows.Forms.Label();
@@ -245,16 +245,16 @@
             this.customerId.TabIndex = 21;
             this.customerId.Text = "13422 52523 561424 67235632";
             // 
-            // accountNumbeer
+            // accountNumber
             // 
-            this.accountNumbeer.AutoSize = true;
-            this.accountNumbeer.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.accountNumbeer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.accountNumbeer.Location = new System.Drawing.Point(503, 349);
-            this.accountNumbeer.Name = "accountNumbeer";
-            this.accountNumbeer.Size = new System.Drawing.Size(218, 21);
-            this.accountNumbeer.TabIndex = 22;
-            this.accountNumbeer.Text = "13422 52523 561424 67235632";
+            this.accountNumber.AutoSize = true;
+            this.accountNumber.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.accountNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.accountNumber.Location = new System.Drawing.Point(503, 349);
+            this.accountNumber.Name = "accountNumber";
+            this.accountNumber.Size = new System.Drawing.Size(218, 21);
+            this.accountNumber.TabIndex = 22;
+            this.accountNumber.Text = "13422 52523 561424 67235632";
             // 
             // plan
             // 
@@ -313,7 +313,7 @@
             this.Controls.Add(this.modifySavingLabel);
             this.Controls.Add(this.modifyBalanceLabel);
             this.Controls.Add(this.plan);
-            this.Controls.Add(this.accountNumbeer);
+            this.Controls.Add(this.accountNumber);
             this.Controls.Add(this.customerId);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -367,7 +367,7 @@
         private Label label9;
         private Label label10;
         private Label customerId;
-        private Label accountNumbeer;
+        private Label accountNumber;
         private ComboBox plan;
         private Label modifyBalanceLabel;
         private Label modifySavingLabel;

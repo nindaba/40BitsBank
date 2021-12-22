@@ -9,6 +9,7 @@ namespace FourtBitsBank_0
     internal static class Utils
     {
         public static MainForm mainForm = new MainForm();
+        public static List<string> CUSTOMER_IDS = new List<string>();       
         public static void displayMenu()
         {
             display(new BankManagement());
@@ -38,6 +39,31 @@ namespace FourtBitsBank_0
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public static string fourRandom()
+        {
+            Random random = new Random();
+            string value = "";
+            for(int i = 0; i < 4; i++)
+            {
+                value += random.Next(0,9);
+            }
+            return value+" ";
+        }
+        public static string generateCustomerId()
+        {
+            string value = "";
+            for (int i = 0; i < 4; i++)
+            {
+                value += Utils.fourRandom();
+            }
+            if (!CUSTOMER_IDS.Contains(value))
+            {
+                CUSTOMER_IDS.Add(value);
+                return value;
+            };
+            return generateCustomerId();
         }
 
     }

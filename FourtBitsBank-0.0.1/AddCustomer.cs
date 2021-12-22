@@ -95,10 +95,7 @@ namespace FourtBitsBank_0
              * 
              */
 
-
-
-
-
+                
                 addOrEditButton.Text = "Modify";
                 balance.Visible = false;
                 balanceLabel.Visible = false;
@@ -106,6 +103,8 @@ namespace FourtBitsBank_0
             }
             else
             {
+                accountNumber.Text = Utils.generateCustomerId();
+                MessageBox.Show(Utils.generateCustomerId());
                 modifyBalanceLabel.Visible = false;
                 modifySavingLabel.Visible = false;
                 modifyBalance.Visible = false;
