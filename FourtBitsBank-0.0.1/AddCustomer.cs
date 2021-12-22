@@ -110,8 +110,8 @@ namespace FourtBitsBank_0
             }
             else
             {
-                accountNumber.Text = Utils.generateCustomerId();
-                MessageBox.Show(Utils.generateCustomerId());
+                accountNumber.Text = Utils.generateAccountNumber();
+                customerId.Text = Utils.generateId();
                 modifyBalanceLabel.Visible = false;
                 modifySavingLabel.Visible = false;
                 modifyBalance.Visible = false;
