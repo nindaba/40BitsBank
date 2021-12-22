@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0._0._1
 {
-    internal class Customer : Person
+    public  class Customers
     {
-        int Balance;
-        Plan plan;
-        int accountNumber;
     }
 }
