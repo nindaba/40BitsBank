@@ -18,6 +18,10 @@ namespace FourtBitsBank_0
             this.adress = adress;
             this.profilePic = profilePic;
         }
-
+        override
+        public string ToString()
+        {
+            return $"{this.name}_{this.lastname}_{this.contact}_{this.email}_{this.adress}_{this.profilePic}";
+        }
     }
 }
