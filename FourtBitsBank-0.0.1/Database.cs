@@ -8,6 +8,15 @@ namespace FourtBitsBank_0
 {
     public static class Database
     {
-        public static List<Customer> customers = new List<Customer>();
+        private static List<Customer> customers = new List<Customer>();
+        public static void saveCustomer(Customer customer)
+        {
+            customers.Add(customer);
+        }
+        //private static List<Staff> staff = new List<Staff>();
+        //public static void saveStaff(Staff staff)
+        //{
+        //    customers.Add(staff);
+        //}
     }
 }

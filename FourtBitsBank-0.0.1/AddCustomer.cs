@@ -64,8 +64,12 @@ namespace FourtBitsBank_0
                     contact.Text,
                     email.Text,
                     address.Text,
-                    balance.Text,
+                    profilePicture.ImageLocation.ToString(),
+                    balance.Value,
+                    accountNumber.Text,
+                    customerId.Text
                     ) ;
+                Database.saveCustomer(customer);    
             }
             else
             {

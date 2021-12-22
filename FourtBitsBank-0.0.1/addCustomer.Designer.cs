@@ -43,7 +43,6 @@
             this.contact = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
-            this.balance = new System.Windows.Forms.TextBox();
             this.profilePicture = new System.Windows.Forms.PictureBox();
             this.chooseProfile = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,7 +54,9 @@
             this.modifySavingLabel = new System.Windows.Forms.Label();
             this.modifySavings = new System.Windows.Forms.Label();
             this.modifyBalance = new System.Windows.Forms.Label();
+            this.balance = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balance)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -188,13 +189,6 @@
             this.address.Size = new System.Drawing.Size(367, 23);
             this.address.TabIndex = 14;
             // 
-            // balance
-            // 
-            this.balance.Location = new System.Drawing.Point(112, 304);
-            this.balance.Name = "balance";
-            this.balance.Size = new System.Drawing.Size(153, 23);
-            this.balance.TabIndex = 15;
-            // 
             // profilePicture
             // 
             this.profilePicture.Image = global::FourtBitsBank_0._0._1.Properties.Resources.default2;
@@ -302,12 +296,26 @@
             this.modifyBalance.TabIndex = 44;
             this.modifyBalance.Text = "label13";
             // 
+            // balance
+            // 
+            this.balance.DecimalPlaces = 1;
+            this.balance.Location = new System.Drawing.Point(112, 307);
+            this.balance.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
+            this.balance.Name = "balance";
+            this.balance.Size = new System.Drawing.Size(240, 23);
+            this.balance.TabIndex = 46;
+            // 
             // AddCustomer
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.balance);
             this.Controls.Add(this.modifySavings);
             this.Controls.Add(this.modifyBalance);
             this.Controls.Add(this.modifySavingLabel);
@@ -319,7 +327,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.chooseProfile);
             this.Controls.Add(this.profilePicture);
-            this.Controls.Add(this.balance);
             this.Controls.Add(this.address);
             this.Controls.Add(this.email);
             this.Controls.Add(this.contact);
@@ -339,6 +346,7 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.AddCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,7 +369,6 @@
         private TextBox contact;
         private TextBox email;
         private TextBox address;
-        private TextBox balance;
         private PictureBox profilePicture;
         private Button chooseProfile;
         private Label label9;
@@ -373,5 +380,6 @@
         private Label modifySavingLabel;
         private Label modifySavings;
         private Label modifyBalance;
+        private NumericUpDown balance;
     }
 }

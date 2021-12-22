@@ -8,12 +8,12 @@ namespace FourtBitsBank_0
 {
     public class Customer : Person
     {
-        int balance;
+        decimal balance;
         Plan plan;
-        int accountNumber;
-        int customerId;
+        string accountNumber;
+        string customerId;
         public Customer(string name,string lastname,string contact,string email,string adress,string profilePic,
-            int balance,int accountNumber,int customerId)
+            decimal balance,string accountNumber,string customerId)
 
 
 
