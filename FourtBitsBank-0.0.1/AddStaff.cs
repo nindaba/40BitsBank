@@ -15,6 +15,12 @@ namespace FourtBitsBank_0
         public AddStaff()
         {
             InitializeComponent();
+            initialize();
+        }
+
+        private void initialize()
+        {
+            profilePicture.ImageLocation = @"images/default.png";
             role.Items.Add(Role.ROLE1);
             role.Items.Add(Role.ROLE2);
             role.Items.Add(Role.ROLE3);
@@ -45,6 +51,20 @@ namespace FourtBitsBank_0
              * staffId.Text
              */
 
+            Staff staff = new Staff(
+                    name.Text,
+                    lastName.Text,
+                    contact.Text,
+                    email.Text,
+                    address.Text,
+                    profilePicture.ImageLocation.ToString(),
+                    Utils.generateId(),
+                    (Role) role.SelectedIndex,
+                    0,
+                    0,
+                    0,
+                    0);
+           // Database
             clearInputs();
             Utils.display(new BankManagement());
         }
