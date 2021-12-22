@@ -48,6 +48,13 @@ namespace FourtBitsBank_0
              * customerId.Text
              * accountNumbeer.Text
              */
+            clearInputs();
+            Random random = new Random();
+            int CustomerIdRandom = random.Next(10000, 99999);
+            customerId.Text += CustomerIdRandom.ToString();
+            int AccountNumberRandom = random.Next(10000, 99999);
+            accountNumbeer.Text += AccountNumberRandom.ToString();
+            MessageBox.Show("Check the IDs");
             if (isAdd)
             {
                 // Put the add customer codes here
