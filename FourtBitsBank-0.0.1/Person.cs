@@ -11,7 +11,6 @@ namespace FourtBitsBank_0
         string name, lastname, contact, email, adress,profilePic;
         public Person(string name, string lastname, string contact, string email, string adress, string profilePic)
         {
-            //aasdsadsa
             this.name = name;
             this.lastname = lastname;
             this.contact = contact;
