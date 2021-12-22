@@ -31,13 +31,13 @@
             this.name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.Button();
+            this.addOrEditButton = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.balanceLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lastName = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
@@ -51,6 +51,10 @@
             this.customerId = new System.Windows.Forms.Label();
             this.accountNumbeer = new System.Windows.Forms.Label();
             this.plan = new System.Windows.Forms.ComboBox();
+            this.modifyBalanceLabel = new System.Windows.Forms.Label();
+            this.modifySavingLabel = new System.Windows.Forms.Label();
+            this.modifySavings = new System.Windows.Forms.Label();
+            this.modifyBalance = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,15 +84,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Add Customer";
             // 
-            // add
+            // addOrEditButton
             // 
-            this.add.Location = new System.Drawing.Point(704, 405);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 33);
-            this.add.TabIndex = 3;
-            this.add.Text = "Add";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
+            this.addOrEditButton.Location = new System.Drawing.Point(704, 405);
+            this.addOrEditButton.Name = "addOrEditButton";
+            this.addOrEditButton.Size = new System.Drawing.Size(75, 33);
+            this.addOrEditButton.TabIndex = 3;
+            this.addOrEditButton.Text = "Add";
+            this.addOrEditButton.UseVisualStyleBackColor = true;
+            this.addOrEditButton.Click += new System.EventHandler(this.add_Or_Edit_Click);
             // 
             // cancel
             // 
@@ -138,19 +142,19 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Address";
             // 
-            // label7
+            // balanceLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(42, 271);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 15);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Balance";
+            this.balanceLabel.AutoSize = true;
+            this.balanceLabel.Location = new System.Drawing.Point(42, 307);
+            this.balanceLabel.Name = "balanceLabel";
+            this.balanceLabel.Size = new System.Drawing.Size(48, 15);
+            this.balanceLabel.TabIndex = 9;
+            this.balanceLabel.Text = "Balance";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(42, 312);
+            this.label8.Location = new System.Drawing.Point(42, 269);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 15);
             this.label8.TabIndex = 10;
@@ -186,7 +190,7 @@
             // 
             // balance
             // 
-            this.balance.Location = new System.Drawing.Point(112, 268);
+            this.balance.Location = new System.Drawing.Point(112, 304);
             this.balance.Name = "balance";
             this.balance.Size = new System.Drawing.Size(153, 23);
             this.balance.TabIndex = 15;
@@ -214,16 +218,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(42, 371);
+            this.label9.Location = new System.Drawing.Point(44, 354);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 15);
             this.label9.TabIndex = 19;
             this.label9.Text = "Customer ID";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(42, 405);
+            this.label10.Location = new System.Drawing.Point(398, 354);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 15);
             this.label10.TabIndex = 20;
@@ -234,7 +239,7 @@
             this.customerId.AutoSize = true;
             this.customerId.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.customerId.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.customerId.Location = new System.Drawing.Point(148, 366);
+            this.customerId.Location = new System.Drawing.Point(150, 349);
             this.customerId.Name = "customerId";
             this.customerId.Size = new System.Drawing.Size(218, 21);
             this.customerId.TabIndex = 21;
@@ -245,7 +250,7 @@
             this.accountNumbeer.AutoSize = true;
             this.accountNumbeer.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.accountNumbeer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.accountNumbeer.Location = new System.Drawing.Point(147, 400);
+            this.accountNumbeer.Location = new System.Drawing.Point(503, 349);
             this.accountNumbeer.Name = "accountNumbeer";
             this.accountNumbeer.Size = new System.Drawing.Size(218, 21);
             this.accountNumbeer.TabIndex = 22;
@@ -254,10 +259,48 @@
             // plan
             // 
             this.plan.FormattingEnabled = true;
-            this.plan.Location = new System.Drawing.Point(112, 309);
+            this.plan.Location = new System.Drawing.Point(112, 266);
             this.plan.Name = "plan";
             this.plan.Size = new System.Drawing.Size(240, 23);
             this.plan.TabIndex = 23;
+            // 
+            // modifyBalanceLabel
+            // 
+            this.modifyBalanceLabel.AutoSize = true;
+            this.modifyBalanceLabel.Location = new System.Drawing.Point(47, 402);
+            this.modifyBalanceLabel.Name = "modifyBalanceLabel";
+            this.modifyBalanceLabel.Size = new System.Drawing.Size(48, 15);
+            this.modifyBalanceLabel.TabIndex = 24;
+            this.modifyBalanceLabel.Text = "Balance";
+            // 
+            // modifySavingLabel
+            // 
+            this.modifySavingLabel.AutoSize = true;
+            this.modifySavingLabel.Location = new System.Drawing.Point(339, 428);
+            this.modifySavingLabel.Name = "modifySavingLabel";
+            this.modifySavingLabel.Size = new System.Drawing.Size(47, 15);
+            this.modifySavingLabel.TabIndex = 25;
+            this.modifySavingLabel.Text = "Savings";
+            // 
+            // modifySavings
+            // 
+            this.modifySavings.AutoSize = true;
+            this.modifySavings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.modifySavings.Location = new System.Drawing.Point(395, 426);
+            this.modifySavings.Name = "modifySavings";
+            this.modifySavings.Size = new System.Drawing.Size(48, 15);
+            this.modifySavings.TabIndex = 45;
+            this.modifySavings.Text = "Savings";
+            // 
+            // modifyBalance
+            // 
+            this.modifyBalance.AutoSize = true;
+            this.modifyBalance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.modifyBalance.Location = new System.Drawing.Point(101, 405);
+            this.modifyBalance.Name = "modifyBalance";
+            this.modifyBalance.Size = new System.Drawing.Size(44, 15);
+            this.modifyBalance.TabIndex = 44;
+            this.modifyBalance.Text = "label13";
             // 
             // AddCustomer
             // 
@@ -265,6 +308,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.modifySavings);
+            this.Controls.Add(this.modifyBalance);
+            this.Controls.Add(this.modifySavingLabel);
+            this.Controls.Add(this.modifyBalanceLabel);
             this.Controls.Add(this.plan);
             this.Controls.Add(this.accountNumbeer);
             this.Controls.Add(this.customerId);
@@ -278,13 +325,13 @@
             this.Controls.Add(this.contact);
             this.Controls.Add(this.lastName);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.balanceLabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cancel);
-            this.Controls.Add(this.add);
+            this.Controls.Add(this.addOrEditButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.name);
@@ -302,13 +349,13 @@
         private TextBox name;
         private Label label1;
         private Label label2;
-        private Button add;
+        private Button addOrEditButton;
         private Button cancel;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
+        private Label balanceLabel;
         private Label label8;
         private TextBox lastName;
         private TextBox contact;
@@ -322,5 +369,9 @@
         private Label customerId;
         private Label accountNumbeer;
         private ComboBox plan;
+        private Label modifyBalanceLabel;
+        private Label modifySavingLabel;
+        private Label modifySavings;
+        private Label modifyBalance;
     }
 }

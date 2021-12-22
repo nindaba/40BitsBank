@@ -334,21 +334,25 @@
             // 
             // changeProfile
             // 
-            this.changeProfile.Location = new System.Drawing.Point(622, 230);
+            this.changeProfile.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.changeProfile.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.changeProfile.ForeColor = System.Drawing.Color.White;
+            this.changeProfile.Location = new System.Drawing.Point(622, 286);
             this.changeProfile.Name = "changeProfile";
-            this.changeProfile.Size = new System.Drawing.Size(166, 23);
+            this.changeProfile.Size = new System.Drawing.Size(166, 33);
             this.changeProfile.TabIndex = 44;
-            this.changeProfile.Text = "Change Profile";
-            this.changeProfile.UseVisualStyleBackColor = true;
-            this.changeProfile.Click += new System.EventHandler(this.changeProfile_Click);
+            this.changeProfile.Text = "Edit";
+            this.changeProfile.UseVisualStyleBackColor = false;
+            this.changeProfile.Click += new System.EventHandler(this.editCustomer);
             // 
             // controlBalance
             // 
             this.controlBalance.BackColor = System.Drawing.Color.LimeGreen;
+            this.controlBalance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.controlBalance.ForeColor = System.Drawing.Color.White;
-            this.controlBalance.Location = new System.Drawing.Point(385, 223);
+            this.controlBalance.Location = new System.Drawing.Point(622, 325);
             this.controlBalance.Name = "controlBalance";
-            this.controlBalance.Size = new System.Drawing.Size(111, 33);
+            this.controlBalance.Size = new System.Drawing.Size(166, 33);
             this.controlBalance.TabIndex = 45;
             this.controlBalance.Text = "Control Balance";
             this.controlBalance.UseVisualStyleBackColor = false;

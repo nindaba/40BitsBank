@@ -12,13 +12,18 @@ namespace FourtBitsBank_0
 {
     public partial class AddCustomer : Form
     {
-        public AddCustomer()
+        
+        private Boolean isAdd;
+        public AddCustomer(Boolean isAdd = true)
         {
             InitializeComponent();
             plan.Items.Add(Plan.PLAN1);
             plan.Items.Add(Plan.PLAN2);
             plan.Items.Add(Plan.PLAN3);
             plan.SelectedIndex = 0;
+            this.isAdd = isAdd;
+            initialize();
+            
         }
 
         private void cancel_Click(object sender, EventArgs e)
@@ -27,7 +32,7 @@ namespace FourtBitsBank_0
             Utils.displayMenu();
         }
 
-        private void add_Click(object sender, EventArgs e)
+        private void add_Or_Edit_Click(object sender, EventArgs e)
         {
             /*
              * NOTE DO NOT DELETE THE COMEMENTS WRITE THE CODE BELLOW
@@ -43,6 +48,15 @@ namespace FourtBitsBank_0
              * customerId.Text
              * accountNumbeer.Text
              */
+            if (isAdd)
+            {
+                // Put the add customer codes here
+                // I guess you already wrten that
+            }
+            else
+            {
+                //put the save code here
+            }
             clearInputs();
             Utils.displayMenu();
         }
@@ -57,6 +71,49 @@ namespace FourtBitsBank_0
         }
 
         private void AddCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void initialize()
+        {
+            if (!isAdd)
+            {
+             /*
+             * NOTE DO NOT DELETE THE COMEMENTS WRITE THE CODE BELLOW
+             * TODO Write code for for loading the customer data in the the following valiables this is done when you load the customer for editing
+             * TODO as you can see you are in !isAdd "not is add"
+             * lastName.Text
+             * contact.Text
+             * email.Text
+             * address.Text
+             * balance.Text 
+             * profilePicture.ImageLocation.ToString();
+             * plan.SelectedIndex
+             * customerId.Text
+             * accountNumbeer.Text
+             * savings
+             * 
+             */
+
+
+
+
+
+                addOrEditButton.Text = "Modify";
+                balance.Visible = false;
+                balanceLabel.Visible = false;
+                modifyBalance.Text = balance.Text;
+            }
+            else
+            {
+                modifyBalanceLabel.Visible = false;
+                modifySavingLabel.Visible = false;
+                modifyBalance.Visible = false;
+                modifySavings.Visible = false;
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }

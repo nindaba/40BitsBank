@@ -64,5 +64,12 @@ namespace FourtBitsBank_0
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
         }
+
+        private void editCustomer(object sender, EventArgs e)
+        {
+
+            AddCustomer editCustomer = new AddCustomer(false);
+            Utils.display(editCustomer);
+        }
     }
 }
