@@ -276,7 +276,7 @@
             // modifySavingLabel
             // 
             this.modifySavingLabel.AutoSize = true;
-            this.modifySavingLabel.Location = new System.Drawing.Point(339, 428);
+            this.modifySavingLabel.Location = new System.Drawing.Point(332, 405);
             this.modifySavingLabel.Name = "modifySavingLabel";
             this.modifySavingLabel.Size = new System.Drawing.Size(47, 15);
             this.modifySavingLabel.TabIndex = 25;
@@ -286,7 +286,7 @@
             // 
             this.modifySavings.AutoSize = true;
             this.modifySavings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.modifySavings.Location = new System.Drawing.Point(395, 426);
+            this.modifySavings.Location = new System.Drawing.Point(385, 405);
             this.modifySavings.Name = "modifySavings";
             this.modifySavings.Size = new System.Drawing.Size(48, 15);
             this.modifySavings.TabIndex = 45;
