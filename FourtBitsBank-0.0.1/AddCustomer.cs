@@ -96,23 +96,23 @@ namespace FourtBitsBank_0
         {
             if (!isAdd)
             {
-             /*
-             * NOTE DO NOT DELETE THE COMEMENTS WRITE THE CODE BELLOW
-             * TODO Write code for for loading the customer data in the the following valiables this is done when you load the customer for editing
-             * TODO as you can see you are in !isAdd "not is add"
-             * lastName.Text
-             * contact.Text
-             * email.Text
-             * address.Text
-             * balance.Text 
-             * profilePicture.ImageLocation.ToString();
-             * plan.SelectedIndex
-             * customerId.Text
-             * accountNumbeer.Text
-             * savings
-             * 
-             */
-
+                /*
+                * NOTE DO NOT DELETE THE COMEMENTS WRITE THE CODE BELLOW
+                * TODO Write code for for loading the customer data in the the following valiables this is done when you load the customer for editing
+                * TODO as you can see you are in !isAdd "not is add"
+                * lastName.Text
+                * contact.Text
+                * email.Text
+                * address.Text
+                * balance.Text 
+                * profilePicture.ImageLocation.ToString();
+                * plan.SelectedIndex
+                * customerId.Text
+                * accountNumbeer.Text
+                * savings
+                * 
+                */
+                Customers customers;
                 
                 addOrEditButton.Text = "Modify";
                 balance.Visible = false;

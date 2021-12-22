@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+`   1q
 namespace FourtBitsBank_0
 {
     internal static class Utils
