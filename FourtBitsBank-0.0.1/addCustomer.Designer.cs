@@ -30,7 +30,7 @@
         {
             this.name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.addOrEditButton = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -75,15 +75,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
-            // label2
+            // title
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(332, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Add Customer";
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.title.Location = new System.Drawing.Point(332, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(135, 25);
+            this.title.TabIndex = 2;
+            this.title.Text = "Add Customer";
             // 
             // addOrEditButton
             // 
@@ -339,7 +339,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.addOrEditButton);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.name);
             this.Name = "AddCustomer";
@@ -356,7 +356,7 @@
 
         private TextBox name;
         private Label label1;
-        private Label label2;
+        private Label title;
         private Button addOrEditButton;
         private Button cancel;
         private Label label3;
