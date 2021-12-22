@@ -10,6 +10,6 @@ namespace FourtBitsBank_0
     {
         int Balance;
         Plan plan;
-        int accountNumber;
+        int accountNumber; //ni
     }
 }
