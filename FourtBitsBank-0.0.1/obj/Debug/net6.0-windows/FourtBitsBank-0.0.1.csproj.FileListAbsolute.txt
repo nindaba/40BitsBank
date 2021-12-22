@@ -72,3 +72,4 @@ C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\Fou
 C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\ref\FourtBitsBank-0.0.1.dll
 C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.0.1.pdb
 C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.0.1.genruntimeconfig.cache
+C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.0.1.csproj.AssemblyReference.cache
