@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0
 {
-    public class Customer : Person
+    public class Customer : Person //
     {
         decimal balance;
         Plan plan;
