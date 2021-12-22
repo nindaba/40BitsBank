@@ -9,10 +9,6 @@ namespace FourtBitsBank_0._0._1
     public class Person
     {
         string name, lastname, contact, email, adress;
-        public Person()
-        {
-
-        }
         public Person(string name, string lastname, string contact, string email, string adress)
         {
             this.name = name;

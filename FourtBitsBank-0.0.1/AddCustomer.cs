@@ -57,8 +57,7 @@ namespace FourtBitsBank_0
             //MessageBox.Show("Check the IDs");
             if (isAdd)
             {
-                // Put the add customer codes here
-                // I guess you already wrten that
+                
             }
             else
             {
