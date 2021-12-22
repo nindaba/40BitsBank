@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FourtBitsBank_0._0._1
+namespace FourtBitsBank_0
 {
     public class Customer : Person
     {
