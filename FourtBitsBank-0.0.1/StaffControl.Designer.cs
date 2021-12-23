@@ -210,9 +210,9 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(25, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 15);
+            this.label9.Size = new System.Drawing.Size(45, 15);
             this.label9.TabIndex = 34;
-            this.label9.Text = "Staff D";
+            this.label9.Text = "Staff ID";
             // 
             // panel3
             // 

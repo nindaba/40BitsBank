@@ -46,6 +46,10 @@ namespace FourtBitsBank_0
              * extraHoursInfo.Text
              * unpaidHoursInfo.Text
              */
+            Staff staff = Database.getStaff(Index.CURENT);
+            balanceInfo.Text = staff.balance.ToString();
+            customerId.Text = staff.staff_id;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
