@@ -33,6 +33,19 @@ namespace FourtBitsBank_0
              * extraHoursInfo.Text
              * unpaidHoursInfo.Text
              */
+            Staff staff = Database.getStaff(Index.CURENT);
+            decimal payment = (staff.balance + ((int)staff.role * (staff.hours + Convert.ToDecimal(1.4) * staff.extra_hours)));
+            staff.balance = payment;
+            balanceInfo.Text = staff.balance.ToString();
+            //Paying calculation ^^^^^^^
+            staff.hours = 0;
+            staff.extra_hours = 0;
+            unpaidHoursInfo.Text = staff.hours.ToString();
+            extraHoursInfo.Text= staff.extra_hours.ToString();
+            Database.updateStaff(staff);
+            MessageBox.Show($"Paid {payment} to the Worker");
+
+
 
         }
         private void initialize()
@@ -70,8 +83,17 @@ namespace FourtBitsBank_0
              * 
                */
 
+            Staff staff = Database.getStaff(Index.CURENT);
+            //balanceInfo.Text = ((int)staff.role * (normalHours.Value + Convert.ToDecimal(1.4) * extraHours.Value)).ToString();
+            staff.hours = staff.hours + Convert.ToInt32(normalHours.Value);
+            unpaidHoursInfo.Text = staff.hours.ToString();
+            staff.extra_hours = staff.extra_hours + Convert.ToInt32(extraHours.Value);
+            extraHoursInfo.Text = staff.extra_hours.ToString();
+            Database.updateStaff(staff);
+            MessageBox.Show($"Added {normalHours.Value} hours\nAdded {extraHours.Value} extra hours");
 
-            normalHours.Text = extraHours.Text="0";
+            normalHours.Text = extraHours.Text = "0";
+
         }
 
     }
