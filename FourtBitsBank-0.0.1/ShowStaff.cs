@@ -76,7 +76,7 @@ namespace FourtBitsBank_0
             role.Text = staff.role.ToString();
             hours.Text = staff.hours.ToString();
             extraHours.Text = staff.extra_hours.ToString();
-            salary.Text = staff.salary.ToString();
+            salary.Text = staff.salary.ToString(); 
             contact.Text = staff.contact;
             profilePicture.ImageLocation = staff.profilePic;
             page.Text = (Database.staffIndex + 1)+" / "+ Database.maxStaffs;

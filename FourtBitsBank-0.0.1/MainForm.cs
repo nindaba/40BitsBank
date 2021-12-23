@@ -16,9 +16,5 @@ namespace FourtBitsBank_0
         {
             InitializeComponent();
         }
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

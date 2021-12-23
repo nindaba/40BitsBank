@@ -233,7 +233,7 @@
             this.customerId.AutoSize = true;
             this.customerId.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.customerId.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.customerId.Location = new System.Drawing.Point(150, 349);
+            this.customerId.Location = new System.Drawing.Point(123, 349);
             this.customerId.Name = "customerId";
             this.customerId.Size = new System.Drawing.Size(218, 21);
             this.customerId.TabIndex = 21;
@@ -290,7 +290,7 @@
             // 
             this.modifyBalance.AutoSize = true;
             this.modifyBalance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.modifyBalance.Location = new System.Drawing.Point(101, 405);
+            this.modifyBalance.Location = new System.Drawing.Point(101, 402);
             this.modifyBalance.Name = "modifyBalance";
             this.modifyBalance.Size = new System.Drawing.Size(44, 15);
             this.modifyBalance.TabIndex = 44;
