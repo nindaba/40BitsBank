@@ -33,6 +33,7 @@ namespace FourtBitsBank_0
              * extraHoursInfo.Text
              * unpaidHoursInfo.Text
              */
+
         }
         private void initialize()
         {
@@ -62,12 +63,14 @@ namespace FourtBitsBank_0
              * NOTE REmember to reflesh the dada
              * variables
              * ---------------
-             * normalHours.Text
-             * extraHours.Text;
-             */
+             * normalHours.Value
+             * extraHours.Value
+
+             * BALANCE IS ~~~~~> (int) staff.role * (normalHours.Value + 1.4*extraHours.Value)
+             * 
+               */
 
 
-            //Write your code above this is for clearing 
             normalHours.Text = extraHours.Text="0";
         }
 
