@@ -15,7 +15,7 @@ namespace FourtBitsBank_0
         public StaffControl()
         {
             InitializeComponent();
-            initializeInfo();
+            initialize();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace FourtBitsBank_0
              * unpaidHoursInfo.Text
              */
         }
-        private void initializeInfo()
+        private void initialize()
         {
             /*
              * WRITE CODE BELLOW THE COMMENTS AND DO NOT DELETE THE COMMENTS
@@ -49,7 +49,8 @@ namespace FourtBitsBank_0
             Staff staff = Database.getStaff(Index.CURENT);
             balanceInfo.Text = staff.balance.ToString();
             customerId.Text = staff.staff_id;
-
+            unpaidHoursInfo.Text = staff.hours.ToString();
+            extraHoursInfo.Text = staff.extra_hours.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -20,7 +20,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Append,FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                streamWriter.Write(customer);
+                streamWriter.WriteLine(customer);
                 streamWriter.Close();
                 fileStream.Close();
             }
@@ -66,7 +66,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/staffs.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                streamWriter.Write(staff);
+                streamWriter.WriteLine(staff);
                 streamWriter.Close();
                 fileStream.Close();
             }
@@ -83,7 +83,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Truncate, FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                customers.ForEach(streamWriter.Write);
+                customers.ForEach(streamWriter.WriteLine);
                 streamWriter.Close();
                 fileStream.Close();
             }
@@ -99,7 +99,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/staffs.txt", FileMode.Truncate, FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                staffs.ForEach(streamWriter.Write);
+                staffs.ForEach(streamWriter.WriteLine);
                 streamWriter.Close();
                 fileStream.Close();
             }

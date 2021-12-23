@@ -33,7 +33,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.chooseProfile = new System.Windows.Forms.Button();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.balance = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
             this.contact = new System.Windows.Forms.TextBox();
@@ -49,7 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
+            this.balance = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balance)).BeginInit();
             this.SuspendLayout();
             // 
             // role
@@ -65,7 +66,7 @@
             this.staffId.AutoSize = true;
             this.staffId.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.staffId.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.staffId.Location = new System.Drawing.Point(138, 368);
+            this.staffId.Location = new System.Drawing.Point(102, 368);
             this.staffId.Name = "staffId";
             this.staffId.Size = new System.Drawing.Size(218, 21);
             this.staffId.TabIndex = 44;
@@ -88,6 +89,7 @@
             this.chooseProfile.TabIndex = 41;
             this.chooseProfile.Text = "Choose Profile";
             this.chooseProfile.UseVisualStyleBackColor = true;
+            this.chooseProfile.Click += new System.EventHandler(this.chooseProfile_Click_1);
             // 
             // profilePicture
             // 
@@ -98,13 +100,6 @@
             this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilePicture.TabIndex = 40;
             this.profilePicture.TabStop = false;
-            // 
-            // balance
-            // 
-            this.balance.Location = new System.Drawing.Point(102, 270);
-            this.balance.Name = "balance";
-            this.balance.Size = new System.Drawing.Size(153, 23);
-            this.balance.TabIndex = 39;
             // 
             // address
             // 
@@ -236,17 +231,29 @@
             this.name.Size = new System.Drawing.Size(240, 23);
             this.name.TabIndex = 24;
             // 
+            // balance
+            // 
+            this.balance.Location = new System.Drawing.Point(103, 271);
+            this.balance.Maximum = new decimal(new int[] {
+            1661992959,
+            1808227885,
+            5,
+            0});
+            this.balance.Name = "balance";
+            this.balance.Size = new System.Drawing.Size(239, 23);
+            this.balance.TabIndex = 47;
+            // 
             // AddStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.balance);
             this.Controls.Add(this.role);
             this.Controls.Add(this.staffId);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.chooseProfile);
             this.Controls.Add(this.profilePicture);
-            this.Controls.Add(this.balance);
             this.Controls.Add(this.address);
             this.Controls.Add(this.email);
             this.Controls.Add(this.contact);
@@ -265,6 +272,7 @@
             this.Name = "AddStaff";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.balance)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +285,6 @@
         private Label label9;
         private Button chooseProfile;
         private PictureBox profilePicture;
-        private TextBox balance;
         private TextBox address;
         private TextBox email;
         private TextBox contact;
@@ -293,5 +300,6 @@
         private Label label2;
         private Label label1;
         private TextBox name;
+        private NumericUpDown balance;
     }
 }

@@ -21,10 +21,10 @@ namespace FourtBitsBank_0
         private void initialize()
         {
             profilePicture.ImageLocation = @"images/default.png";
-            role.Items.Add(Role.ROLE1);
-            role.Items.Add(Role.ROLE2);
-            role.Items.Add(Role.ROLE3);
-            role.Items.Add(Role.ROLE4);
+            role.Items.Add(Role.DIRECTOR);
+            role.Items.Add(Role.CASHIER);
+            role.Items.Add(Role.ACCOUNTANT);
+            role.Items.Add(Role.MANAGER);
             role.SelectedIndex = 0;
             staffId.Text = Utils.generateId();
         }
@@ -60,11 +60,11 @@ namespace FourtBitsBank_0
                     email.Text,
                     address.Text,
                     profilePicture.ImageLocation.ToString(),
-                    (Role) role.SelectedIndex,
+                    (Role) role.SelectedItem,
                     0,
                     0,
                     0,
-                    0);
+                    balance.Value);
            Database.saveStaff(staff);
             clearInputs();
             Utils.display(new BankManagement());
@@ -73,8 +73,7 @@ namespace FourtBitsBank_0
         {
             name.Text = lastName.Text = contact.Text = email.Text = address.Text = balance.Text = "";
         }
-
-        private void chooseProfile_Click(object sender, EventArgs e)
+        private void chooseProfile_Click_1(object sender, EventArgs e)
         {
             Utils.selectPicture(profilePicture);
         }
