@@ -68,7 +68,7 @@ namespace FourtBitsBank_0
 
         public static void updateCustomer(Customer customer)
         {
-            customers[ customerIndex] = customer;
+            customers[customerIndex] = customer;
             string custms = "";
             foreach(var cust in customers)
             {
