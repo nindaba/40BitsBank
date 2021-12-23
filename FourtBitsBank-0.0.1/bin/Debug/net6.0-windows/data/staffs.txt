@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-C-8742 _a_s_s_s_s_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\icons\icons8-menu-32.ico_DIRECTOR_0_0_0_0_48000,0
-B-4258 _q_q_q_q_q_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\0d8a067d-47ad-483f-a9d6-ee91fb522eb1.jpeg_CASHIER_0_0_0_0_0
-=======
->>>>>>> 6e0202b2baeccb1a2af7febe3454329b9596131f
+A-5126 _Nelson_Kwiat_+1 027-725-9863_NelsonKwiat544@mail.ru_76 Stradella Road APT 725 Azusa_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\staff1.jpg_DIRECTOR_54_432_131760,00
+E-0610 _Kailee _Giacopelli_+1 257-824-4047_KaileeGiacopelli687@mail.ru_136 S Avenue 54 APT 280 Somerville_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\staff2.jpg_CASHIER_20_5_50810,00
+E-2573 _Nancy _Voss_+1 723-352-0914_NancyVoss655@gmail.com_93 N Church Lane APT 594 Maricopa_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\staff3.jpg_ACCOUNTANT_31_10_43600,00
+E-1874 _Janiyah _Bayuk_+1 558-642-5371_JaniyahBayuk17@gmail.com_136 Carolina Place APT 856 Pueblo_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\staff4.jpg_MANAGER_4_2_21088,00
