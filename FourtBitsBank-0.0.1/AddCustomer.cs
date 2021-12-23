@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace FourtBitsBank_0
 {
     public partial class AddCustomer : Form
@@ -44,7 +43,7 @@ namespace FourtBitsBank_0
              * address.Text
              * balance.Text 
              * profilePicture.ImageLocation.ToString();
-             * plan.SelectedIndex
+             * plan.SelectedValue
              * customerId.Text
              * accountNumbeer.Text
              */
@@ -59,14 +58,21 @@ namespace FourtBitsBank_0
                     profilePicture.ImageLocation.ToString(),
                     balance.Value,
                     accountNumber.Text,
-                    (Plan)plan.SelectedIndex,
-                    0
+                    (Plan) plan.SelectedIndex,
+                    Decimal.Parse(modifySavings.Text)
                     );
-                if (isAdd) Database.saveCustomer(customer);
-                else Database.updateCustomer(customer);
+                if (isAdd)
+                {
+                    Database.saveCustomer(customer);
+                    Utils.displayMenu();
+                }
+                else
+                {
+                    Database.updateCustomer(customer);
+                    Utils.display(new ShowCustomer());
+                }
 
                 clearInputs();
-                Utils.displayMenu();
             }
             else MessageBox.Show("Wrong Input Data");
         }
@@ -99,7 +105,7 @@ namespace FourtBitsBank_0
                 * address.Text
                 * balance.Text 
                 * profilePicture.ImageLocation.ToString();
-                * plan.SelectedIndex
+                * plan.SelectedValue
                 * customerId.Text
                 * accountNumbeer.Text
                 * savings
@@ -107,7 +113,8 @@ namespace FourtBitsBank_0
                 */
 
 
-                Customer customer=Database.getCustomer(Database.customerIndex);
+                Customer customer = Database.getCustomer(Index.CURENT);
+
                 name.Text = customer.name;
                 lastName.Text = customer.lastname;
                 contact.Text = customer.contact;
@@ -115,7 +122,7 @@ namespace FourtBitsBank_0
                 address.Text = customer.adress;
                 balance.Text = customer.balance.ToString();
                 profilePicture.ImageLocation = customer.profilePic;
-                //plan.SelectedIndex = customer.plan;
+                plan.SelectedValue = customer.plan;
                 customerId.Text = customer.customerId;
                 accountNumber.Text = customer.accountNumber;
                 modifySavings.Text = customer.savings.ToString();

@@ -9,13 +9,13 @@ namespace FourtBitsBank_0
     public class Staff : Person
     {
         //this string below should be encapsulated. We use public because Mahdi does not have time
-        public string staff_id;
-        Role role;
-        int hours, extra_hours;
-        decimal salary, balance;
+        public  string staff_id;
+        public Role role;
+        public int hours, extra_hours;
+        public decimal salary, balance;
         public Staff(
-            string name, string lastname, string contact, string email, string adress, string profilePic,
-            string staff_id, Role role, int hours, int extra_hours, decimal salary, decimal balance)
+            string staff_id,string name, string lastname, string contact, string email, string adress, string profilePic,
+             Role role, int hours, int extra_hours, decimal salary, decimal balance)
             : base(name, lastname, contact, email, adress, profilePic)
         {
             this.staff_id = staff_id;

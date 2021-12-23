@@ -15,8 +15,7 @@ namespace FourtBitsBank_0
         public ShowCustomer()
         {
             InitializeComponent();
-            Database.loadCustomers();
-            showCustomer(Database.customerIndex);
+            initialize();
         }
 
         private void controlBalance_Click(object sender, EventArgs e)
@@ -56,11 +55,7 @@ namespace FourtBitsBank_0
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
-            if (Database.customerIndex > 0)
-            {
-                Database.customerIndex--;
-                showCustomer(Database.customerIndex);
-            }
+            initialize(Index.PREV);
             
         }
 
@@ -72,24 +67,16 @@ namespace FourtBitsBank_0
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
-            if (Database.customerIndex < Database.customers.Count()-1)
-            {
-                Database.customerIndex++;
-                showCustomer(Database.customerIndex);
-            }
+            initialize(Index.NEXT);
         }
 
         private void editCustomer(object sender, EventArgs e)
         {
-
             AddCustomer editCustomer = new AddCustomer(false);
             Utils.display(editCustomer);
         }
-
-        void initCustomer()
+        private void initialize(Index index = 0)
         {
-
-
             /*
             * lastName.Text
             * contact.Text
@@ -106,12 +93,7 @@ namespace FourtBitsBank_0
             * current.Text  //this is for the pagination;showing the current page << 1/10 >>
             * outOf.Text    //this is for the pagination;showing the current page << 1/10 >>
             */
-            
-        }
-        void showCustomer(int index)
-        {
-            Customer customer = Database.customers[Database.customerIndex];
-
+            Customer customer = Database.getCustomer(index);
             name.Text = customer.name;
             lastName.Text = customer.lastname;
             contact.Text = customer.contact;
@@ -123,6 +105,8 @@ namespace FourtBitsBank_0
             customerId.Text = customer.customerId;
             accountNumbeer.Text = customer.accountNumber;
             savings.Text = customer.savings.ToString();
+            outOf.Text =" / "+ Database.maxCustomers.ToString();
+            plan.Text = customer.plan.ToString();
         }
     }
 }
