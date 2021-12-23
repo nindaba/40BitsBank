@@ -95,6 +95,7 @@
             // 
             // button3
             // 
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(713, 413);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);

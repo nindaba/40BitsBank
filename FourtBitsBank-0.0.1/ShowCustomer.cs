@@ -107,6 +107,10 @@ namespace FourtBitsBank_0
             savings.Text = customer.savings.ToString();
             outOf.Text =" / "+ Database.maxCustomers.ToString();
             plan.Text = customer.plan.ToString();
+
+            //Bonusssss
+            button3.Enabled = Database.customerIndex+1 != Database.maxCustomers;
+            button2.Enabled = Database.customerIndex != 0;
         }
     }
 }

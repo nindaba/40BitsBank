@@ -141,8 +141,8 @@ namespace FourtBitsBank_0
             }
             else
             {
-                accountNumber.Text = Utils.generateAccountNumber();
-                customerId.Text = Utils.generateId();
+                accountNumber.Text = Database.generateAccountNumber();
+                customerId.Text = Database.generateId();
                 modifyBalanceLabel.Visible = false;
                 modifySavingLabel.Visible = false;
                 modifyBalance.Visible = false;

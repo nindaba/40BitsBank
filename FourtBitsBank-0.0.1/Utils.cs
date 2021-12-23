@@ -8,8 +8,10 @@ namespace FourtBitsBank_0
     internal static class Utils
     {
         public static MainForm mainForm = new MainForm();
-        public static List<string> CUSTOMER_IDS = new List<string>();       
-        public static List<string> ACCOUNT_NUMBERS = new List<string>();
+        //public static List<string> CUSTOMER_IDS = new List<string>();       
+        //public static List<string> ACCOUNT_NUMBERS = new List<string>();
+
+
         public static void displayMenu()
         {
             display(new BankManagement());
@@ -53,31 +55,31 @@ namespace FourtBitsBank_0
             }
             return value+" ";
         }
-        public static string generateAccountNumber()
-        {
-            string value = "";
-            for (int i = 0; i < 4; i++)
-            {
-                value += Utils.fourRandom();
-            }
-            if (!ACCOUNT_NUMBERS.Contains(value))
-            {
-               ACCOUNT_NUMBERS.Add(value);
-                return value;
-            };
-            return generateAccountNumber();
-        }
+        //public static string generateAccountNumber()
+        //{
+        //    string value = "";
+        //    for (int i = 0; i < 4; i++)
+        //    {
+        //        value += Utils.fourRandom();
+        //    }
+        //    if (!ACCOUNT_NUMBERS.Contains(value))
+        //    {
+        //       ACCOUNT_NUMBERS.Add(value);
+        //        return value;
+        //    };
+        //    return generateAccountNumber();
+        //}
 
-        public static string generateId()
-        {
-            string value =(char) new Random().Next(65, 70)+"-"+Utils.fourRandom();
-            if (!CUSTOMER_IDS.Contains(value))
-            {
-                CUSTOMER_IDS.Add(value);
-                return value;
-            };
-            return generateId();
-        }
+        //public static string generateId()
+        //{
+        //    string value =(char) new Random().Next(65, 70)+"-"+Utils.fourRandom();
+        //    if (!CUSTOMER_IDS.Contains(value))
+        //    {
+        //        CUSTOMER_IDS.Add(value);
+        //        return value;
+        //    };
+        //    return generateId();
+        //}
 
     }
 }
