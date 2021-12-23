@@ -1,6 +1,6 @@
-B-1717 _Erika_Yearego_+1 993-114-5975_ErikaYearego7@mail.ru_37 Willetta Avenue APT 889 Deerfield Beach, 93636_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person1.jpg_9100,00_8832 1786 2340 7016 _PLAN1_400,00
-A-6446 _Zayn _Balzarini_+1 667-252-1118_ZaynBalzarini59@mail.ru_33 Edgemar Avenue APT 535 Inglewood_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person2.jpg_49500,00_5814 3067 3753 7011 _PLAN3_500,00
-E-3820 _Alonso_Syal_+1 740-582-5785_AlonsoSyal866@mail.ru_12 17th Helena Drive APT 928 Galveston_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person3.jpg_72000,00_5346 7646 0231 5258 _PLAN1_6000,00
-D-1512 _Channing _Gividen_+1 935-595-5187_ChanningGividen508@mail.ru_88 Dominion Way APT 707 Longmont_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person4.jpg_78000_6178 2360 6261 1552 _PLAN1_0
-E-5106 _Miles _Mitsch_+1 715-486-3718_MilesMitsch422@mail.ru_131 E Lovett Street APT 800 Pawtucket_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person5.jpg_888500,00_7540 5685 8253 1628 _PLAN2_1500,00
-D-0533 _Rey_Mane_+1 484-061-6692_ReyMane771@mail.ru_19 Shoredale Avenue APT 912 Cranston_C:\Users\User\Documents\40TBITS\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person6.jpg_739490,00_6267 4064 3068 4774 _PLAN2_10510,00
+B-1717 _Erika_Yearego_+1 993-114-5975_ErikaYearego7@mail.ru_37 Willetta Avenue APT 889 Deerfield Beach, 93636_images/person1.jpg_9100,00_8832 1786 2340 7016 _PLAN1_400,00
+A-6446 _Zayn _Balzarini_+1 667-252-1118_ZaynBalzarini59@mail.ru_33 Edgemar Avenue APT 535 Inglewood_images/person2.jpg_49500,00_5814 3067 3753 7011 _PLAN3_500,00
+E-3820 _Alonso_Syal_+1 740-582-5785_AlonsoSyal866@mail.ru_12 17th Helena Drive APT 928 Galveston_images/person3.jpg_72000,00_5346 7646 0231 5258 _PLAN1_6000,00
+D-1512 _Channing _Gividen_+1 935-595-5187_ChanningGividen508@mail.ru_88 Dominion Way APT 707 Longmont_images/person4.jpg_78000_6178 2360 6261 1552 _PLAN1_0
+E-5106 _Miles _Mitsch_+1 715-486-3718_MilesMitsch422@mail.ru_131 E Lovett Street APT 800 Pawtucket_images/person5.jpg_888500,00_7540 5685 8253 1628 _PLAN2_1500,00
+D-0533 _Rey_Mane_+1 484-061-6692_ReyMane771@mail.ru_19 Shoredale Avenue APT 912 Cranston_images/person6.jpg_739490,00_6267 4064 3068 4774 _PLAN2_10510,00
