@@ -47,8 +47,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.currentStaff = new System.Windows.Forms.Label();
-            this.outOfStaff = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,7 +57,7 @@
             this.salary = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.page = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -248,24 +246,6 @@
             this.profilePicture.TabIndex = 53;
             this.profilePicture.TabStop = false;
             // 
-            // currentStaff
-            // 
-            this.currentStaff.AutoSize = true;
-            this.currentStaff.Location = new System.Drawing.Point(659, 426);
-            this.currentStaff.Name = "currentStaff";
-            this.currentStaff.Size = new System.Drawing.Size(19, 15);
-            this.currentStaff.TabIndex = 52;
-            this.currentStaff.Text = "10";
-            // 
-            // outOfStaff
-            // 
-            this.outOfStaff.AutoSize = true;
-            this.outOfStaff.Location = new System.Drawing.Point(677, 426);
-            this.outOfStaff.Name = "outOfStaff";
-            this.outOfStaff.Size = new System.Drawing.Size(24, 15);
-            this.outOfStaff.TabIndex = 51;
-            this.outOfStaff.Text = "/13";
-            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(713, 422);
@@ -362,21 +342,21 @@
             this.label17.TabIndex = 81;
             this.label17.Text = "/hr";
             // 
-            // label4
+            // page
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(676, 426);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 15);
-            this.label4.TabIndex = 83;
-            this.label4.Text = "/";
+            this.page.AutoSize = true;
+            this.page.Location = new System.Drawing.Point(661, 426);
+            this.page.Name = "page";
+            this.page.Size = new System.Drawing.Size(38, 15);
+            this.page.TabIndex = 82;
+            this.page.Text = "label3";
             // 
             // ShowStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.page);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.label16);
@@ -401,8 +381,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.profilePicture);
-            this.Controls.Add(this.currentStaff);
-            this.Controls.Add(this.outOfStaff);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
@@ -437,8 +415,6 @@
         private Label label12;
         private Label label13;
         private PictureBox profilePicture;
-        private Label currentStaff;
-        private Label outOfStaff;
         private Button button3;
         private Button button2;
         private Label label1;
@@ -449,6 +425,6 @@
         private Label salary;
         private Label label16;
         private Label label17;
-        private Label label4;
+        private Label page;
     }
 }

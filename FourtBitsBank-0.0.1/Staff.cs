@@ -14,8 +14,8 @@ namespace FourtBitsBank_0
         public int hours, extra_hours;
         public decimal salary, balance;
         public Staff(
-            string name, string lastname, string contact, string email, string adress, string profilePic,
-            string staff_id, Role role, int hours, int extra_hours, decimal salary, decimal balance)
+            string staff_id,string name, string lastname, string contact, string email, string adress, string profilePic,
+             Role role, int hours, int extra_hours, decimal salary, decimal balance)
             : base(name, lastname, contact, email, adress, profilePic)
         {
             this.staff_id = staff_id;

@@ -13,6 +13,8 @@ namespace FourtBitsBank_0
         public static void displayMenu()
         {
             display(new BankManagement());
+            Database.loadCustomers();
+            Database.loadSaff();
         }
         public static  void display(Form form)
         {

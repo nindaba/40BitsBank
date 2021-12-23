@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace FourtBitsBank_0
 {
+    public enum Index { NEXT = 1, CURENT = 0, PREV = -1 }
     public static class Database
     {
 
-
-        public static  List<Customer> customers = new List<Customer>();
+        private static  List<Customer> customers = new List<Customer>();
+        public static  int maxCustomers { get => customers.Count; }
+        public static  int maxStaffs { get => staffs.Count; }
         public static  int customerIndex = 0;
         public static void saveCustomer(Customer customer)
         {
@@ -18,7 +20,7 @@ namespace FourtBitsBank_0
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Append,FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                streamWriter.Write(customer.ToString());
+                streamWriter.Write(customer);
                 streamWriter.Close();
                 fileStream.Close();
             }
@@ -27,13 +29,21 @@ namespace FourtBitsBank_0
                 MessageBox.Show(ex.Message);
             }
         }
-        public static Customer getCustomer(int index)
+        public static Customer getCustomer(Index index)
         {
-            return customers[index];
+            if(customerIndex + (int)index >= 0 && customerIndex + (int)index < customers.Count)
+            Database.customerIndex += (int)index;
+            return customers[customerIndex];
+        }
+        public static Staff getStaff(Index index)
+        {
+            if (staffIndex + (int)index >= 0 && staffIndex + (int)index < staffs.Count)
+                Database.staffIndex += (int)index;
+            return staffs[staffIndex];
         }
         public static void loadCustomers()
         {
-            List<Customer> customers = new List<Customer>();
+            Database.customers.Clear();
             try
             {
                 FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Read);
@@ -48,15 +58,15 @@ namespace FourtBitsBank_0
             }
         }
         private static List<Staff> staffs = new List<Staff>();
-        private static int staffIndex = 0;
+        public static int staffIndex = 0;
         public static void saveStaff(Staff staff)
         {
             staffs.Add(staff);
             try
             {
-                FileStream fileStream = new FileStream("data/customers.txt", FileMode.Append, FileAccess.Write);
+                FileStream fileStream = new FileStream("data/staffs.txt", FileMode.Append, FileAccess.Write);
                 StreamWriter streamWriter = new StreamWriter(fileStream);
-                streamWriter.Write(staff.ToString());
+                streamWriter.Write(staff);
                 streamWriter.Close();
                 fileStream.Close();
             }
@@ -65,12 +75,45 @@ namespace FourtBitsBank_0
                 MessageBox.Show(ex.Message);
             }
         }
-        public static List<Staff> getSaff()
+
+        public static void updateCustomer(Customer customer)
         {
-            List<Staff> staffs = new List<Staff>();
+            customers[customerIndex] = customer;
             try
             {
-                FileStream fileStream = new FileStream("data/customers.txt", FileMode.Open, FileAccess.Read);
+                FileStream fileStream = new FileStream("data/customers.txt", FileMode.Truncate, FileAccess.Write);
+                StreamWriter streamWriter = new StreamWriter(fileStream);
+                customers.ForEach(streamWriter.Write);
+                streamWriter.Close();
+                fileStream.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public static void updateStaff(Staff staff)
+        {
+            staffs[staffIndex] = staff;
+            try
+            {
+                FileStream fileStream = new FileStream("data/staffs.txt", FileMode.Truncate, FileAccess.Write);
+                StreamWriter streamWriter = new StreamWriter(fileStream);
+                staffs.ForEach(streamWriter.Write);
+                streamWriter.Close();
+                fileStream.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public static void loadSaff()
+        {
+            Database.staffs.Clear();
+            try
+            {
+                FileStream fileStream = new FileStream("data/staffs.txt", FileMode.Open, FileAccess.Read);
                 StreamReader streamReader = new StreamReader(fileStream);
                 while (!streamReader.EndOfStream) Database.staffs.Add(Staff.Parse(streamReader.ReadLine()));
                 streamReader.Close();
@@ -80,7 +123,6 @@ namespace FourtBitsBank_0
             {
                 MessageBox.Show("Failed to load data from the file");
             }
-            return staffs;
         }
     }
 }

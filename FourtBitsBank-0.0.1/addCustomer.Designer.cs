@@ -282,9 +282,9 @@
             this.modifySavings.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.modifySavings.Location = new System.Drawing.Point(385, 405);
             this.modifySavings.Name = "modifySavings";
-            this.modifySavings.Size = new System.Drawing.Size(48, 15);
+            this.modifySavings.Size = new System.Drawing.Size(14, 15);
             this.modifySavings.TabIndex = 45;
-            this.modifySavings.Text = "Savings";
+            this.modifySavings.Text = "0";
             // 
             // modifyBalance
             // 

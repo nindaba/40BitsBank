@@ -26,6 +26,7 @@ namespace FourtBitsBank_0
             role.Items.Add(Role.ROLE3);
             role.Items.Add(Role.ROLE4);
             role.SelectedIndex = 0;
+            staffId.Text = Utils.generateId();
         }
 
         private void cancel_Click(object sender, EventArgs e)
@@ -52,19 +53,19 @@ namespace FourtBitsBank_0
              */
 
             Staff staff = new Staff(
+                    staffId.Text,
                     name.Text,
                     lastName.Text,
                     contact.Text,
                     email.Text,
                     address.Text,
                     profilePicture.ImageLocation.ToString(),
-                    Utils.generateId(),
                     (Role) role.SelectedIndex,
                     0,
                     0,
                     0,
                     0);
-           // Database
+           Database.saveStaff(staff);
             clearInputs();
             Utils.display(new BankManagement());
         }
