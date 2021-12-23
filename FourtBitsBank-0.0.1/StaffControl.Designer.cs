@@ -30,11 +30,11 @@
         {
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.normalHours = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.extraHours = new System.Windows.Forms.TextBox();
+            this.extraHours = new System.Windows.Forms.NumericUpDown();
+            this.normalHours = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.unpaidHoursInfo = new System.Windows.Forms.Label();
@@ -49,6 +49,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.extraHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.normalHours)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,13 +75,6 @@
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // normalHours
-            // 
-            this.normalHours.Location = new System.Drawing.Point(78, 48);
-            this.normalHours.Name = "normalHours";
-            this.normalHours.Size = new System.Drawing.Size(214, 23);
-            this.normalHours.TabIndex = 47;
             // 
             // label3
             // 
@@ -108,9 +103,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.extraHours);
+            this.panel2.Controls.Add(this.normalHours);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.normalHours);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(34, 267);
@@ -120,10 +115,27 @@
             // 
             // extraHours
             // 
-            this.extraHours.Location = new System.Drawing.Point(78, 88);
+            this.extraHours.Location = new System.Drawing.Point(78, 89);
+            this.extraHours.Maximum = new decimal(new int[] {
+            1569325055,
+            23283064,
+            0,
+            0});
             this.extraHours.Name = "extraHours";
             this.extraHours.Size = new System.Drawing.Size(214, 23);
-            this.extraHours.TabIndex = 50;
+            this.extraHours.TabIndex = 52;
+            // 
+            // normalHours
+            // 
+            this.normalHours.Location = new System.Drawing.Point(78, 49);
+            this.normalHours.Maximum = new decimal(new int[] {
+            1569325055,
+            23283064,
+            0,
+            0});
+            this.normalHours.Name = "normalHours";
+            this.normalHours.Size = new System.Drawing.Size(214, 23);
+            this.normalHours.TabIndex = 51;
             // 
             // label5
             // 
@@ -289,6 +301,8 @@
             this.Text = "Form2";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.extraHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.normalHours)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -300,11 +314,9 @@
 
         private Button button4;
         private Button button2;
-        private TextBox normalHours;
         private Label label3;
         private Label label4;
         private Panel panel2;
-        private TextBox extraHours;
         private Label label5;
         private Label label2;
         private Label unpaidHoursInfo;
@@ -318,5 +330,7 @@
         private Label extraHoursInfo;
         private Label label6;
         private Button button3;
+        private NumericUpDown normalHours;
+        private NumericUpDown extraHours;
     }
 }
