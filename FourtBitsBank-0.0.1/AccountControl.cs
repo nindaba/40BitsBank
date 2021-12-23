@@ -43,6 +43,7 @@ namespace FourtBitsBank_0
             balance.Text = customer.balance.ToString();
             MessageBox.Show($"Withdrawed {withdraw.Text} from the balance");
             Database.updateCustomer(customer);
+            clearInputs();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace FourtBitsBank_0
             savings.Text = customer.savings.ToString();
             MessageBox.Show($"Moved {move.Text} to the savings");
             Database.updateCustomer(customer);
+            clearInputs();
 
 
         }
@@ -87,6 +89,7 @@ namespace FourtBitsBank_0
             balance.Text = customer.balance.ToString();
             MessageBox.Show($"Deposited {deposit.Text} to the the balance");
             Database.updateCustomer(customer);
+            clearInputs();
         }
         private void InitializeAccount()
         {
@@ -104,6 +107,10 @@ namespace FourtBitsBank_0
             accountNumbeer.Text = customer.accountNumber;
             balance.Text = customer.balance.ToString();
             savings.Text = customer.savings.ToString();
+        }
+        private void clearInputs()
+        {
+            deposit.Text = move.Text = withdraw.Text = "";
         }
     }
 }
