@@ -1,2 +1,2 @@
-C-8742 _a_s_s_s_s_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\icons\icons8-menu-32.ico_DIRECTOR_0_0_0_0_760000,0
+C-8742 _a_s_s_s_s_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\icons\icons8-menu-32.ico_DIRECTOR_0_0_0_0_48000,0
 B-4258 _q_q_q_q_q_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\0d8a067d-47ad-483f-a9d6-ee91fb522eb1.jpeg_CASHIER_0_0_0_0_0
