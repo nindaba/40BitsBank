@@ -20,7 +20,7 @@ namespace FourtBitsBank_0
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Utils.displayMenu();
+            Utils.display(new ShowCustomer());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,6 +31,18 @@ namespace FourtBitsBank_0
              * ---------
              * withdraw.Text
              */
+            Customer customer = Database.getCustomer(Index.CURENT);
+            decimal result = customer.balance - decimal.Parse(withdraw.Text);
+            if (decimal.Parse(withdraw.Text) > customer.balance)
+            {
+                MessageBox.Show("Withdraw amount is more than balance");
+                return;
+            }
+            else
+            customer.balance = result;
+            balance.Text = customer.balance.ToString();
+            MessageBox.Show($"Withdrawed {withdraw.Text} from the balance");
+            Database.updateCustomer(customer);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +53,23 @@ namespace FourtBitsBank_0
              * ---------
              * move.Text
              */
+            Customer customer = Database.getCustomer(Index.CURENT);
+            decimal result = customer.balance - decimal.Parse(move.Text);
+
+            if (decimal.Parse(move.Text) > customer.balance)  
+            {
+                MessageBox.Show("Moving amount is more than balance");
+                return;
+            }
+            else 
+            customer.savings += decimal.Parse(move.Text);
+            customer.balance= result;
+            balance.Text=customer.balance.ToString();
+            savings.Text = customer.savings.ToString();
+            MessageBox.Show($"Moved {move.Text} to the savings");
+            Database.updateCustomer(customer);
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,6 +81,12 @@ namespace FourtBitsBank_0
              * ---------
              * deposit.Text
              */
+            Customer customer = Database.getCustomer(Index.CURENT);
+            decimal result = customer.balance + decimal.Parse(deposit.Text);
+            customer.balance = result;
+            balance.Text = customer.balance.ToString();
+            MessageBox.Show($"Deposited {deposit.Text} to the the balance");
+            Database.updateCustomer(customer);
         }
         private void InitializeAccount()
         {
@@ -64,6 +99,11 @@ namespace FourtBitsBank_0
              * balance.Text
              * savings.Text
              */
+            Customer customer = Database.getCustomer(Index.CURENT);
+            customerId.Text = customer.customerId;
+            accountNumbeer.Text = customer.accountNumber;
+            balance.Text = customer.balance.ToString();
+            savings.Text = customer.savings.ToString();
         }
     }
 }
