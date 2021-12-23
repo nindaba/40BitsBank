@@ -55,7 +55,7 @@ namespace FourtBitsBank_0
             } 
             catch(Exception ex)
             {
-                MessageBox.Show("Failed to load data from the file");
+                MessageBox.Show("Failed to load Customer data");
             }
         }
         private static List<Staff> staffs = new List<Staff>();
@@ -122,7 +122,7 @@ namespace FourtBitsBank_0
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Failed to load data from the file");
+                MessageBox.Show("Failed to load Staff data");
             }
         }
         public static string nextCustomerId()

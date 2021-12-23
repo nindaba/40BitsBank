@@ -54,6 +54,7 @@ C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\bin\Debug\net6.0-
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.0.1.dll
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\ref\FourtBitsBank-0.0.1.dll
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.0.1.pdb
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.0.1.csproj.AssemblyReference.cache
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.accountControl.resources
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.AddCustomer.resources
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.AddStaff.resources
