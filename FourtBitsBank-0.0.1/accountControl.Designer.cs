@@ -40,25 +40,28 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.withdraw = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
-            this.withdraw = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.move = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
-            this.move = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.deposit = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
-            this.deposit = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.withdraw)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.move)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.deposit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -191,14 +194,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.withdraw);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Location = new System.Drawing.Point(27, 177);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(747, 82);
             this.panel1.TabIndex = 48;
+            // 
+            // withdraw
+            // 
+            this.withdraw.DecimalPlaces = 2;
+            this.withdraw.Location = new System.Drawing.Point(78, 49);
+            this.withdraw.Maximum = new decimal(new int[] {
+            -1304428545,
+            434162106,
+            542,
+            0});
+            this.withdraw.Name = "withdraw";
+            this.withdraw.Size = new System.Drawing.Size(214, 23);
+            this.withdraw.TabIndex = 51;
             // 
             // button1
             // 
@@ -210,13 +226,6 @@
             this.button1.Text = "Withdraw";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // withdraw
-            // 
-            this.withdraw.Location = new System.Drawing.Point(78, 48);
-            this.withdraw.Name = "withdraw";
-            this.withdraw.Size = new System.Drawing.Size(214, 23);
-            this.withdraw.TabIndex = 47;
             // 
             // label6
             // 
@@ -244,14 +253,27 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.move);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(27, 265);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(747, 82);
             this.panel2.TabIndex = 49;
+            // 
+            // move
+            // 
+            this.move.DecimalPlaces = 2;
+            this.move.Location = new System.Drawing.Point(78, 44);
+            this.move.Maximum = new decimal(new int[] {
+            -1304428545,
+            434162106,
+            542,
+            0});
+            this.move.Name = "move";
+            this.move.Size = new System.Drawing.Size(214, 23);
+            this.move.TabIndex = 49;
             // 
             // button2
             // 
@@ -263,13 +285,6 @@
             this.button2.Text = "Move";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // move
-            // 
-            this.move.Location = new System.Drawing.Point(78, 48);
-            this.move.Name = "move";
-            this.move.Size = new System.Drawing.Size(214, 23);
-            this.move.TabIndex = 47;
             // 
             // label3
             // 
@@ -297,14 +312,27 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.deposit);
+            this.panel4.Controls.Add(this.button3);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(27, 356);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(747, 82);
             this.panel4.TabIndex = 49;
+            // 
+            // deposit
+            // 
+            this.deposit.DecimalPlaces = 2;
+            this.deposit.Location = new System.Drawing.Point(78, 43);
+            this.deposit.Maximum = new decimal(new int[] {
+            -1304428545,
+            434162106,
+            542,
+            0});
+            this.deposit.Name = "deposit";
+            this.deposit.Size = new System.Drawing.Size(214, 23);
+            this.deposit.TabIndex = 50;
             // 
             // button3
             // 
@@ -316,13 +344,6 @@
             this.button3.Text = "Deposit";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // deposit
-            // 
-            this.deposit.Location = new System.Drawing.Point(78, 48);
-            this.deposit.Name = "deposit";
-            this.deposit.Size = new System.Drawing.Size(214, 23);
-            this.deposit.TabIndex = 47;
             // 
             // label5
             // 
@@ -374,10 +395,13 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.withdraw)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.move)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.deposit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,19 +421,19 @@
         private Label __balance;
         private Panel panel1;
         private Button button1;
-        private TextBox withdraw;
         private Label label6;
         private Label label13;
         private Panel panel2;
         private Button button2;
-        private TextBox move;
         private Label label3;
         private Label label4;
         private Panel panel4;
         private Button button3;
-        private TextBox deposit;
         private Label label5;
         private Label label7;
         private Button button4;
+        private NumericUpDown withdraw;
+        private NumericUpDown move;
+        private NumericUpDown deposit;
     }
 }
