@@ -51,7 +51,6 @@ namespace FourtBitsBank_0
              * role.SelectedIndex
              * staffId.Text
              */
-
             Staff staff = new Staff(
                     staffId.Text,
                     name.Text,
@@ -60,9 +59,8 @@ namespace FourtBitsBank_0
                     email.Text,
                     address.Text,
                     profilePicture.ImageLocation.ToString(),
-                    (Role) role.SelectedItem,
-                    0,
-                    0,
+                    (Role)role.SelectedItem,
+                    0,                    
                     0,
                     balance.Value);
            Database.saveStaff(staff);

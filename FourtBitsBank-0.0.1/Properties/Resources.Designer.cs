@@ -63,6 +63,36 @@ namespace FourtBitsBank_0._0._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _126585_back_previous_arrow_icon {
+            get {
+                object obj = ResourceManager.GetObject("126585_back_previous_arrow_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _155_1554232_back_icon_png_back_icon_flat_png {
+            get {
+                object obj = ResourceManager.GetObject("155-1554232_back-icon-png-back-icon-flat-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _155_1554232_back_icon_png_back_icon_flat_png1 {
+            get {
+                object obj = ResourceManager.GetObject("155-1554232_back-icon-png-back-icon-flat-png1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _default {
             get {
                 object obj = ResourceManager.GetObject("default", resourceCulture);
@@ -86,6 +116,16 @@ namespace FourtBitsBank_0._0._1.Properties {
         internal static System.Drawing.Bitmap default2 {
             get {
                 object obj = ResourceManager.GetObject("default2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_arrow_back_icon_3783_thumb {
+            get {
+                object obj = ResourceManager.GetObject("free-arrow-back-icon-3783-thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

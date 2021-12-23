@@ -18,11 +18,6 @@ namespace FourtBitsBank_0
             initialize();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Utils.displayMenu();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             //TODO Pay all the staff balance
@@ -33,6 +28,19 @@ namespace FourtBitsBank_0
              * extraHoursInfo.Text
              * unpaidHoursInfo.Text
              */
+            Staff staff = Database.getStaff(Index.CURENT);
+            decimal payment = (staff.balance + (int)staff.role * (staff.hours + Convert.ToDecimal(1.4) * staff.extra_hours));
+            staff.balance = 0;
+            balanceInfo.Text = staff.balance.ToString();
+            //Paying calculation ^^^^^^^
+            staff.hours = 0;
+            staff.extra_hours = 0;
+            unpaidHoursInfo.Text = staff.hours.ToString();
+            extraHoursInfo.Text= staff.extra_hours.ToString();
+            Database.updateStaff(staff);
+            MessageBox.Show($"Paid {payment} to the Worker");
+
+
 
         }
         private void initialize()
@@ -70,9 +78,23 @@ namespace FourtBitsBank_0
              * 
                */
 
+            Staff staff = Database.getStaff(Index.CURENT);
+            staff.balance += (int)staff.role * (normalHours.Value +  1.40m* extraHours.Value);
+            balanceInfo.Text = staff.balance.ToString();
+            staff.hours = staff.hours + (int)normalHours.Value;
+            unpaidHoursInfo.Text = staff.hours.ToString();
+            staff.extra_hours = staff.extra_hours + (int)extraHours.Value;
+            extraHoursInfo.Text = staff.extra_hours.ToString();
+            Database.updateStaff(staff);
+            MessageBox.Show($"Added {normalHours.Value} hours\nAdded {staff.extra_hours} extra hours");
 
-            normalHours.Text = extraHours.Text="0";
+            normalHours.Text = extraHours.Text = "0";
+
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Utils.display(new ShowStaff());
+        }
     }
 }

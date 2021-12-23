@@ -51,14 +51,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.role = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.salary = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.page = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // controlBalance
@@ -285,16 +286,6 @@
             this.label2.TabIndex = 47;
             this.label2.Text = "Created by team 4Tbits";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(8, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // role
             // 
             this.role.AutoSize = true;
@@ -351,11 +342,24 @@
             this.page.TabIndex = 82;
             this.page.Text = "label3";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::FourtBitsBank_0._0._1.Properties.Resources._155_1554232_back_icon_png_back_icon_flat_png1;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 83;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // ShowStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.page);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.salary);
@@ -385,10 +389,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Name = "ShowStaff";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,12 +423,12 @@
         private Button button2;
         private Label label1;
         private Label label2;
-        private Button button1;
         private Label role;
         private Label label15;
         private Label salary;
         private Label label16;
         private Label label17;
         private Label page;
+        private PictureBox pictureBox1;
     }
 }
