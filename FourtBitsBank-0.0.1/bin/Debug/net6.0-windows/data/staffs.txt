@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 A-6035 _G_G_G_G_G_images/default.png_DIRECTOR_1_1_280.00
 C-5551 _Edip_Seny_5467896543_edip@vistula.edu_Stoklocy 3_images/default.png_MANAGER_0_0_0
+=======
+C-8742 _a_s_s_s_s_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\icons\icons8-menu-32.ico_DIRECTOR_0_0_0_0_760000,0
+B-4258 _q_q_q_q_q_C:\Users\HP\Documents\Arthur\C#\TSH\FourtBitsBank\FourtBitsBank\bin\Debug\net6.0-windows\images\0d8a067d-47ad-483f-a9d6-ee91fb522eb1.jpeg_CASHIER_0_0_0_0_0
+>>>>>>> f683eb7f0af4947bc251fb5936302b675b7ff03f

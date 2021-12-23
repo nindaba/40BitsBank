@@ -29,18 +29,20 @@ namespace FourtBitsBank_0
              * unpaidHoursInfo.Text
              */
             Staff staff = Database.getStaff(Index.CURENT);
+<<<<<<< HEAD
             decimal payment = (staff.balance + (int)staff.role * (staff.hours + Convert.ToDecimal(1.4) * staff.extra_hours));
             staff.balance = 0;
+=======
+            staff.balance = staff.balance + ((int)staff.role * (staff.hours + Convert.ToDecimal(1.4) * staff.extra_hours));
+>>>>>>> f683eb7f0af4947bc251fb5936302b675b7ff03f
             balanceInfo.Text = staff.balance.ToString();
             //Paying calculation ^^^^^^^
             staff.hours = 0;
             staff.extra_hours = 0;
             unpaidHoursInfo.Text = staff.hours.ToString();
             extraHoursInfo.Text= staff.extra_hours.ToString();
+            MessageBox.Show(staff.balance.ToString());
             Database.updateStaff(staff);
-            MessageBox.Show($"Paid {payment} to the Worker");
-
-
 
         }
         private void initialize()
