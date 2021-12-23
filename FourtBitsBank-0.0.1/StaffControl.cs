@@ -18,11 +18,6 @@ namespace FourtBitsBank_0
             initialize();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Utils.displayMenu();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             //TODO Pay all the staff balance
@@ -34,7 +29,8 @@ namespace FourtBitsBank_0
              * unpaidHoursInfo.Text
              */
             Staff staff = Database.getStaff(Index.CURENT);
-            staff.balance = staff.balance + ((int)staff.role * (staff.hours + Convert.ToDecimal(1.4) * staff.extra_hours));
+            decimal payment = (staff.balance + (int)staff.role * (staff.hours + 1.4m * staff.extra_hours));
+            staff.balance = 0;
             balanceInfo.Text = staff.balance.ToString();
             //Paying calculation ^^^^^^^
             staff.hours = 0;
@@ -81,10 +77,11 @@ namespace FourtBitsBank_0
                */
 
             Staff staff = Database.getStaff(Index.CURENT);
-            //balanceInfo.Text = ((int)staff.role * (normalHours.Value + Convert.ToDecimal(1.4) * extraHours.Value)).ToString();
-            staff.hours = staff.hours + Convert.ToInt32(normalHours.Value);
+            staff.balance += (int)staff.role * (normalHours.Value +  1.40m* extraHours.Value);
+            balanceInfo.Text = staff.balance.ToString();
+            staff.hours = staff.hours + (int)normalHours.Value;
             unpaidHoursInfo.Text = staff.hours.ToString();
-            staff.extra_hours = staff.extra_hours + Convert.ToInt32(extraHours.Value);
+            staff.extra_hours = staff.extra_hours + (int)extraHours.Value;
             extraHoursInfo.Text = staff.extra_hours.ToString();
             Database.updateStaff(staff);
             MessageBox.Show($"Added {normalHours.Value} hours\nAdded {extraHours.Value} extra hours");
@@ -93,5 +90,9 @@ namespace FourtBitsBank_0
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Utils.display(new ShowStaff());
+        }
     }
 }

@@ -28,7 +28,8 @@ namespace FourtBitsBank_0
         private void cancel_Click(object sender, EventArgs e)
         {
             clearInputs();
-            Utils.displayMenu();
+            if (isAdd) Utils.displayMenu();
+            else Utils.display(new ShowCustomer());
         }
 
         private void add_Or_Edit_Click(object sender, EventArgs e)
@@ -140,8 +141,8 @@ namespace FourtBitsBank_0
             }
             else
             {
-                accountNumber.Text = Utils.generateAccountNumber();
-                customerId.Text = Utils.generateId();
+                accountNumber.Text = Database.generateAccountNumber();
+                customerId.Text = Database.generateId();
                 modifyBalanceLabel.Visible = false;
                 modifySavingLabel.Visible = false;
                 modifyBalance.Visible = false;

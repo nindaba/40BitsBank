@@ -124,5 +124,28 @@ namespace FourtBitsBank_0
                 MessageBox.Show("Failed to load data from the file");
             }
         }
+        public static string generateId()
+        {
+            string value = (char)new Random().Next(65, 70) + "-" + Utils.fourRandom();
+            /*
+             * In Utils.class there is Version one of this method which is using for loops
+             */
+            if (
+                customers.Find(customer => customer.customerId == value) == null &&
+                staffs.Find(customer => customer.staff_id == value) == null
+                ) return value;
+            return generateId();
+        }
+        public static string generateAccountNumber()
+        {
+            string value = "";
+            for (int i = 0; i < 4; i++)
+            {
+                value += Utils.fourRandom();
+            }
+            if (customers.Find(customer => customer.accountNumber == value) == null)
+            return value;
+            return generateAccountNumber();
+        }
     }
 }

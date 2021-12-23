@@ -26,7 +26,7 @@ namespace FourtBitsBank_0
             role.Items.Add(Role.ACCOUNTANT);
             role.Items.Add(Role.MANAGER);
             role.SelectedIndex = 0;
-            staffId.Text = Utils.generateId();
+            staffId.Text = Database.generateId();
         }
 
         private void cancel_Click(object sender, EventArgs e)
@@ -51,7 +51,6 @@ namespace FourtBitsBank_0
              * role.SelectedIndex
              * staffId.Text
              */
-
             Staff staff = new Staff(
                     staffId.Text,
                     name.Text,
@@ -60,14 +59,17 @@ namespace FourtBitsBank_0
                     email.Text,
                     address.Text,
                     profilePicture.ImageLocation.ToString(),
-                    (Role) role.SelectedItem,
-                    0,
-                    0,
+                    (Role)role.SelectedItem,
+                    0,                    
                     0,
                     balance.Value);
-           Database.saveStaff(staff);
-            clearInputs();
-            Utils.display(new BankManagement());
+            if (isValid())
+            {
+                Database.saveStaff(staff);
+                clearInputs();
+                Utils.display(new BankManagement());
+            }
+            else MessageBox.Show("Please fill in all the staff details");
         }
         private void clearInputs()
         {
@@ -76,6 +78,16 @@ namespace FourtBitsBank_0
         private void chooseProfile_Click_1(object sender, EventArgs e)
         {
             Utils.selectPicture(profilePicture);
+        }
+        Boolean isValid()
+        {
+            return !(
+                name.Text.Equals("") &&
+                lastName.Text.Equals("") &&
+                contact.Text.Equals("") &&
+                email.Text.Equals("") &&
+                address.Text.Equals("")
+                );
         }
     }
 }

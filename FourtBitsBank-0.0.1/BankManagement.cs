@@ -29,7 +29,8 @@ namespace FourtBitsBank_0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Utils.display(new ShowCustomer());
+            if (Database.maxCustomers > 0) Utils.display(new ShowCustomer());
+            else MessageBox.Show("There is no Customer registerd, Please first add a Customer THANKS!!");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -39,12 +40,14 @@ namespace FourtBitsBank_0
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Utils.display(new ShowStaff());
+            if (Database.maxStaffs > 0) Utils.display(new ShowStaff());
+            else MessageBox.Show("There is no Staff registerd, Please first add a Staff THANKS!!");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
+
     }
 }

@@ -8,9 +8,9 @@ namespace FourtBitsBank_0
 {
     public enum Role
     {
-        CASHIER = 8000,
-        ACCOUNTANT = 14000,
-        MANAGER = 16000,
-        DIRECTOR = 20000
+        CASHIER = 30,
+        ACCOUNTANT = 80,
+        MANAGER = 160,
+        DIRECTOR = 200
     }
 }

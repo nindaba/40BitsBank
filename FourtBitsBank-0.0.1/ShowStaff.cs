@@ -23,11 +23,6 @@ namespace FourtBitsBank_0
             Utils.display(new StaffControl());
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Utils.displayMenu();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //TODO Show prev staff
@@ -76,10 +71,19 @@ namespace FourtBitsBank_0
             role.Text = staff.role.ToString();
             hours.Text = staff.hours.ToString();
             extraHours.Text = staff.extra_hours.ToString();
-            salary.Text = "" + ((int)staff.role);
+            salary.Text = ""+(int)staff.role;
             contact.Text = staff.contact;
             profilePicture.ImageLocation = staff.profilePic;
             page.Text = (Database.staffIndex + 1)+" / "+ Database.maxStaffs;
+
+            //Bonussssssss
+            button3.Enabled = Database.staffIndex + 1 != Database.maxStaffs;
+            button2.Enabled = Database.staffIndex != 0;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Utils.displayMenu();
         }
     }
 }
