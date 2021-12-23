@@ -31,7 +31,7 @@ namespace FourtBitsBank_0
         override
         public string ToString()
         {
-            return $"{this.customerId}_{base.ToString()}_{this.balance}_{this.accountNumber}_{this.plan}_{this.savings} \n";
+            return $"{this.customerId}_{base.ToString()}_{this.balance}_{this.accountNumber}_{this.plan}_{this.savings}";
         }
         public static Customer Parse(string customer)
         {
