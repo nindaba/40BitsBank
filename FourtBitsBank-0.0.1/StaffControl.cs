@@ -84,7 +84,7 @@ namespace FourtBitsBank_0
             staff.extra_hours = staff.extra_hours + (int)extraHours.Value;
             extraHoursInfo.Text = staff.extra_hours.ToString();
             Database.updateStaff(staff);
-            MessageBox.Show($"Added {normalHours.Value} hours\nAdded {staff.extra_hours} extra hours");
+            MessageBox.Show($"Added {normalHours.Value} hours\nAdded {extraHours.Value} extra hours");
 
             normalHours.Text = extraHours.Text = "0";
 

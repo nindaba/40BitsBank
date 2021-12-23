@@ -18,11 +18,6 @@ namespace FourtBitsBank_0
             InitializeAccount();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Utils.display(new ShowCustomer());
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //TODO this is where you withdraw
@@ -111,6 +106,11 @@ namespace FourtBitsBank_0
         private void clearInputs()
         {
             deposit.Value = move.Value = withdraw.Value = 0;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Utils.display(new ShowCustomer());
         }
     }
 }
