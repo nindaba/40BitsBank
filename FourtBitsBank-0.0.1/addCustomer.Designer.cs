@@ -191,7 +191,7 @@
             // 
             // profilePicture
             // 
-            this.profilePicture.Image = global::FourtBitsBank_0._0._1.Properties.Resources.default2;
+            this.profilePicture.Image = global::FourtBitsBank_0._0._1.Properties.Resources._default;
             this.profilePicture.Location = new System.Drawing.Point(599, 42);
             this.profilePicture.Name = "profilePicture";
             this.profilePicture.Size = new System.Drawing.Size(166, 159);

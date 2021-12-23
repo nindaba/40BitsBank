@@ -282,7 +282,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::FourtBitsBank_0._0._1.Properties.Resources._155_1554232_back_icon_png_back_icon_flat_png1;
+            this.pictureBox1.Image = global::FourtBitsBank_0._0._1.Properties.Resources.back;
             this.pictureBox1.Location = new System.Drawing.Point(12, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 22);

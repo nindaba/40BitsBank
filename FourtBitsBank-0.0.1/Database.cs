@@ -14,6 +14,7 @@ namespace FourtBitsBank_0
         public static  int maxCustomers { get => customers.Count; }
         public static  int maxStaffs { get => staffs.Count; }
         public static  int customerIndex = 0;
+
         public static void saveCustomer(Customer customer)
         {
             try
@@ -124,17 +125,23 @@ namespace FourtBitsBank_0
                 MessageBox.Show("Failed to load data from the file");
             }
         }
-        public static string generateId()
+        public static string nextCustomerId()
         {
             string value = (char)new Random().Next(65, 70) + "-" + Utils.fourRandom();
             /*
              * In Utils.class there is Version one of this method which is using for loops
              */
-            if (
-                customers.Find(customer => customer.customerId == value) == null &&
-                staffs.Find(customer => customer.staff_id == value) == null
-                ) return value;
-            return generateId();
+            if (customers.Find(customer => customer.customerId == value) == null) return value;
+            return nextCustomerId();
+        }
+        public static string nextStaffId()
+        {
+            string value = (char)new Random().Next(71, 76) + "-" + Utils.fourRandom();
+            /*
+             * In Utils.class there is Version one of this method which is using for loops
+             */
+            if (staffs.Find(customer => customer.staff_id == value) == null) return value;
+            return nextStaffId();
         }
         public static string generateAccountNumber()
         {

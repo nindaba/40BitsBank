@@ -26,7 +26,7 @@ namespace FourtBitsBank_0
             role.Items.Add(Role.ACCOUNTANT);
             role.Items.Add(Role.MANAGER);
             role.SelectedIndex = 0;
-            staffId.Text = Database.generateId();
+            staffId.Text = Database.nextStaffId();
         }
 
         private void cancel_Click(object sender, EventArgs e)
