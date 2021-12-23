@@ -69,5 +69,6 @@ namespace FourtBitsBank_0
             //Write your code above this is for clearing 
             normalHours.Text = extraHours.Text="0";
         }
+
     }
 }

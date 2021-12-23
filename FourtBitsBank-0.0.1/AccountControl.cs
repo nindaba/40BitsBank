@@ -29,11 +29,11 @@ namespace FourtBitsBank_0
             /*
              * variables
              * ---------
-             * withdraw.Text
+             * withdraw.Valvue
              */
             Customer customer = Database.getCustomer(Index.CURENT);
             decimal result = customer.balance - decimal.Parse(withdraw.Text);
-            if (decimal.Parse(withdraw.Text) > customer.balance)
+            if (withdraw.Value > customer.balance)
             {
                 MessageBox.Show("Withdraw amount is more than balance");
                 return;
@@ -57,7 +57,7 @@ namespace FourtBitsBank_0
             Customer customer = Database.getCustomer(Index.CURENT);
             decimal result = customer.balance - decimal.Parse(move.Text);
 
-            if (decimal.Parse(move.Text) > customer.balance)  
+            if (move.Value > customer.balance)  
             {
                 MessageBox.Show("Moving amount is more than balance");
                 return;
@@ -81,13 +81,13 @@ namespace FourtBitsBank_0
             /*
              * variables
              * ---------
-             * deposit.Text
+             * deposit.value
              */
             Customer customer = Database.getCustomer(Index.CURENT);
-            decimal result = customer.balance + decimal.Parse(deposit.Text);
+            decimal result = customer.balance + deposit.Value;
             customer.balance = result;
             balance.Text = customer.balance.ToString();
-            MessageBox.Show($"Deposited {deposit.Text} to the the balance");
+            MessageBox.Show($"Deposited {deposit.Value} to the the balance");
             Database.updateCustomer(customer);
             clearInputs();
         }
@@ -110,7 +110,7 @@ namespace FourtBitsBank_0
         }
         private void clearInputs()
         {
-            deposit.Text = move.Text = withdraw.Text = "";
+            deposit.Value = move.Value = withdraw.Value = 0;
         }
     }
 }
