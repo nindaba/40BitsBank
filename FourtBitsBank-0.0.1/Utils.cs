@@ -55,6 +55,14 @@ namespace FourtBitsBank_0
             }
             return value+" ";
         }
+        public static bool contactValidator(string contact)
+        {
+            char start = contact.Length > 0 ? Char.Parse(contact.Substring(0,1)) : '\0';
+            return
+                contact.Equals("") ||
+                contact.Trim('+').ToList().Find(chr => chr is > '9' or < '0').Equals('\0') &&
+                start is '+' or <= '9' and >= '0';
+        }
         //public static string generateAccountNumber()
         //{
         //    string value = "";

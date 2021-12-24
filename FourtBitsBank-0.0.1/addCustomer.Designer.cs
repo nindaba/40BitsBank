@@ -174,6 +174,7 @@
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(170, 23);
             this.contact.TabIndex = 12;
+            this.contact.TextChanged += new System.EventHandler(this.validate);
             // 
             // email
             // 

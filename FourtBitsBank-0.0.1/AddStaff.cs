@@ -82,12 +82,18 @@ namespace FourtBitsBank_0
         Boolean isValid()
         {
             return !(
-                name.Text.Equals("") &&
-                lastName.Text.Equals("") &&
-                contact.Text.Equals("") &&
-                email.Text.Equals("") &&
-                address.Text.Equals("")
-                );
+                name.Text.Equals("") ||
+                lastName.Text.Equals("") ||
+                email.Text.Equals("") ||
+                contact.Text.Equals("+") ||
+                address.Text.Equals("")) &&
+                Utils.contactValidator(contact.Text);
+        }
+
+        private void validate(object sender, EventArgs e)
+        {
+            if (Utils.contactValidator(contact.Text)) contact.ForeColor = Color.Black;
+            else contact.ForeColor = Color.Red;
         }
     }
 }
