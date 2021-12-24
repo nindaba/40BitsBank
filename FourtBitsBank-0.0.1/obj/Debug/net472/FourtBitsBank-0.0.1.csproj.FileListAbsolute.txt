@@ -1,0 +1,16 @@
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.accountControl.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.addCustomer.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.AddStaff.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.BankManagement.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.MainForm.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.Properties.Resources.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.ShowCustomer.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.showStaff.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank_0._0._1.StaffControl.resources
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.AssemblyInfo.cs
+C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net472\FourtBitsBank-0.0.1.csproj.CoreCompileInputs.cache

@@ -60,8 +60,8 @@ namespace FourtBitsBank_0
             char start = contact.Length > 0 ? Char.Parse(contact.Substring(0,1)) : '\0';
             return
                 contact.Equals("") ||
-                contact.Trim('+').ToList().Find(chr => chr is > '9' or < '0').Equals('\0') &&
-                start is '+' or <= '9' and >= '0';
+                contact.Trim('+').ToList().Find(chr => chr > '9' || chr < '0').Equals('\0') &&
+                start == '+' || start <= '9' && start >= '0';
         }
         //public static string generateAccountNumber()
         //{
