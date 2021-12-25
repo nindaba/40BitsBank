@@ -2,10 +2,11 @@
 
   <PropertyGroup>
 	  <OutputType>WinExe</OutputType>
-	  <TargetFramework>net472</TargetFramework>
+	  <TargetFramework>net6.0-windows</TargetFramework>
+	  <RootNamespace>FourtBitsBank_0._0._1</RootNamespace>
 	  <Nullable>enable</Nullable>
 	  <UseWindowsForms>true</UseWindowsForms>
-	  <LangVersion>preview</LangVersion>
+	  <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
