@@ -15,3 +15,5 @@ A-3622 _q_q__q_q_images/default.png_0_7242 5803 3685 0380 _PLAN1_0
 A-1053 __q_+_q_q_images/default.png_0_2851 0261 1252 7651 _PLAN1_0
 D-5285 __q_q_q_q_images/default.png_0_5707 8482 5410 6215 _PLAN1_0
 C-7521 _q_0_+0_q_q_images/default.png_0_4377 0887 4026 5801 _PLAN1_0
+C-7807 _q_q_1_q_q_images/default.png_0_1735 0514 3275 0453 _PLAN1_0
+B-5038 _q_w_1_k_k_C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\images\person1.jpg_0_1582 4283 8168 2446 _PLAN1_0

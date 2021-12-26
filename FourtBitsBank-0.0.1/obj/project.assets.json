@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
-      "projectName": "FourtBitsBank-0.0.1",
-      "projectPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.0.1.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
+      "projectName": "FourtBitsBank-0.1.net.6",
+      "projectPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\obj\\",
       "projectStyle": "PackageReference",
