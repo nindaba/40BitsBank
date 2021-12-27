@@ -37,7 +37,7 @@ namespace FourtBitsBank_0
             staff.extra_hours = 0;
             unpaidHoursInfo.Text = staff.hours.ToString();
             extraHoursInfo.Text= staff.extra_hours.ToString();
-            MessageBox.Show(staff.balance.ToString());
+            MessageBox.Show($"Payment is { payment}");
             Database.updateStaff(staff);
 
         }
