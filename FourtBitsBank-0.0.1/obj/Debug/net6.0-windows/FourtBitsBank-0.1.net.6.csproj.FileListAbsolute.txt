@@ -23,3 +23,28 @@ C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\ref\FourtBitsBank-0.1.net.6.dll
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.pdb
 C:\Users\HP\Documents\Arthur\C#\40BitsBank\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.genruntimeconfig.cache
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.exe
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.deps.json
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.runtimeconfig.json
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.dll
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\ref\FourtBitsBank-0.1.net.6.dll
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\bin\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.pdb
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.accountControl.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.AddCustomer.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.AddStaff.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.BankManagement.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.MainForm.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0._0._1.Properties.Resources.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.ShowCustomer.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.ShowStaff.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank_0.StaffControl.resources
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.csproj.GenerateResource.cache
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.AssemblyInfo.cs
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.dll
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\ref\FourtBitsBank-0.1.net.6.dll
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.pdb
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.genruntimeconfig.cache
+C:\Users\HP\Documents\Arthur\C#\57086_40Bits_Project 2\FourtBitsBank-0.0.1\obj\Debug\net6.0-windows\FourtBitsBank-0.1.net.6.csproj.AssemblyReference.cache

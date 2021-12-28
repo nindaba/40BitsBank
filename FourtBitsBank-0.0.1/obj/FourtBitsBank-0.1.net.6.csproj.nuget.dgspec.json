@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj": {}
+    "C:\\Users\\HP\\Documents\\Arthur\\C#\\57086_40Bits_Project 2\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj": {
+    "C:\\Users\\HP\\Documents\\Arthur\\C#\\57086_40Bits_Project 2\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Documents\\Arthur\\C#\\57086_40Bits_Project 2\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
         "projectName": "FourtBitsBank-0.1.net.6",
-        "projectPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
+        "projectPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\57086_40Bits_Project 2\\FourtBitsBank-0.0.1\\FourtBitsBank-0.1.net.6.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\40BitsBank\\FourtBitsBank-0.0.1\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Documents\\Arthur\\C#\\57086_40Bits_Project 2\\FourtBitsBank-0.0.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -129,7 +129,7 @@ namespace FourtBitsBank_0
         }
         public static string nextCustomerId()
         {
-            string value = (char)new Random().Next(65, 70) + "-" + Utils.fourRandom();
+            string value = new string[] {"A", "B", "C", "D", "E" }[new Random().Next(0, 4)] + "-" + Utils.fourRandom();
             /*
              * In Utils.class there is Version one of this method which is using for loops
              */
@@ -138,7 +138,7 @@ namespace FourtBitsBank_0
         }
         public static string nextStaffId()
         {
-            string value = (char)new Random().Next(71, 76) + "-" + Utils.fourRandom();
+            string value = new string[] {"T", "L", "X", "Y", "Z" }[new Random().Next(0,4)] + "-" + Utils.fourRandom();
             /*
              * In Utils.class there is Version one of this method which is using for loops
              */
