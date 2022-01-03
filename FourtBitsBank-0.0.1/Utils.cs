@@ -30,14 +30,15 @@ namespace FourtBitsBank_0
         {
             try
             {
+                string profileUpdateName = $"images/{Guid.NewGuid()}.jpeg";
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 openFileDialog.ShowDialog();
-                picture.ImageLocation = openFileDialog.FileName;
-                FileStream fileStream = new FileStream(picture.ImageLocation.ToString(), FileMode.Open, FileAccess.Read);
-                FileStream resource = new FileStream($"images/{Guid.NewGuid()}.jpeg", FileMode.OpenOrCreate);
+                FileStream fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read);
+                FileStream resource = new FileStream(profileUpdateName, FileMode.OpenOrCreate);
                 fileStream.CopyTo(resource);
                 fileStream.Close();
                 resource.Close();
+                picture.ImageLocation = profileUpdateName;
             }
             catch (Exception ex)
             {
